@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Владислав Зачесов](https://up.htmlacademy.ru/htmlcss/34/user/1702959).
-* Наставник: `Неизвестно`.
+* Студент: [Владислав](https://up.htmlacademy.ru/htmlcss/34/user/1702959).
+* Наставник: [Дмитрий](https://htmlacademy.ru/profile/dima).
 
 ---
 
