@@ -2,11 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс-каталог</title>
+    <title>HTML Academy: Девайс - Каталог - Моноподы для селфи</title>
     <link rel="icon" href="favicon.svg">
   </head>
   <body>
-    <header class="app_header">
+    <header class="app_header section-col">
       <object class="app-logo" type="image/svg+xml" data="images/icons/logo.svg"></object>
 
       <div class="control-panel">
@@ -58,7 +58,132 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <div class="breadcrumbs section-col">
+        <h1 class="header text-xl">Моноподы для селфи</h1>
+        <ul>
+          <li>
+            Главная
+            <object type="image/svg+xml" data="images/icons/nav-arrow.svg"></object>
+          </li>
+          <li>
+            Каталог товаров
+            <object type="image/svg+xml" data="images/icons/nav-arrow.svg"></object>
+          </li>
+          <li>Моноподы для селфи</li>
+        </ul>
+      </div>
+      <div class="catalog section-col">
+        <form class="catalog-sidebar-filter">
+          <h4>Фильтр</h4>
+          <div class="catalog-sidebar-filter__filter-prop">
+            <hr/>
+            <h5>Стоимость</h5>
+            <div class='price-slider'>
+              <label class=price-label' for='bottom-price'></label>
+              <input id='bottom-price' type='range' min='0' value='100000' max='1000000'/>
+
+              <label class='price-label' for='top-price'></label>
+              <input id='top-price' type='range' min='0' value='500000' max='1000000'/>
+            </div>
+          </div>
+          <div class="catalog-sidebar-filter__filter-prop">
+            <hr/>
+            <h5>Цвет</h5>
+            <label>
+              <input type="checkbox" checked/>
+              <b>Черный</b>
+            </label>
+            <label>
+              <input type="checkbox" checked/>
+              <b>Белый</b>
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <b>Синий</b>
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <b>Розовый</b>
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <b>Красный</b>
+            </label>
+          </div>
+          <div class="catalog-sidebar-filter__filter-prop">
+            <hr/>
+            <h5>Bluetooth</h5>
+            <label>
+              <input name="bluetooh" type="radio" checked/>
+              <span>Есть</span>
+            </label>
+            <label>
+              <input name="bluetooh" type="radio"/>
+              <span>Нет</span>
+            </label>
+          </div>
+          <button type="submit" class="line-btn">Показать</button>
+        </form>
+        <div class="catalog-list-wrapper">
+          <div class="catalog-sort-panel">
+            <label>
+              <b>Сортировка</b>
+
+              <select class="catalog-sort-proprety">
+                <option>Популярные</option>
+                <option>Рейтинг</option>
+                <option>Стоимость</option>
+              </select>
+            </label>
+            <div>
+              <button>
+                <object type="image/svg+xml" data="images/icons/arrow2-up.svg"></object>
+              </button>
+              <button>
+                <object type="image/svg+xml" data="images/icons/arrow2-down.svg"></object>
+              </button>
+            </div>
+          </div>
+          <div class="catalog-listing">
+            <ul class="catalog-list">
+              <li class="catalog-list__item">
+                <img class="catalog-list__item-image" src="images/content/product-1.png" alt="Любительская селфи-палка"/>
+                <p class="catalog-list__item-name">Любительская селфи-палка</p>
+                <b class="catalog-list__item-price">500</b>
+              </li>
+              <li class="catalog-list__item">
+                <img class="catalog-list__item-image" src="images/content/product-2.png" alt="Профессиональная селфи-палка"/>
+                <p class="catalog-list__item-name">Профессиональная селфи-палка</p>
+                <b class="catalog-list__item-price">1 500</b>
+              </li>
+              <li class="catalog-list__item">
+                <img class="catalog-list__item-image" src="images/content/product-3.png" alt="Непотопляемая селфи-палка"/>
+                <p class="catalog-list__item-name">Непотопляемая селфи-палка</p>
+                <b class="catalog-list__item-price">2 500</b>
+              </li>
+              <li class="catalog-list__item">
+                <img class="catalog-list__item-image" src="images/content/product-4.png" alt="Селфи-палка «Следуй за мной»"/>
+                <p class="catalog-list__item-name">Селфи-палка «Следуй за мной»</p>
+                <b class="catalog-list__item-price">1 500</b>
+              </li>
+            </ul>
+            <button class="fullwidth-button">Загрузить еще</button>
+            <div class="fullwidth-pagination">
+              <a href="#page-prev">Назад</a>
+              <div class="pages">
+                <a href="#page-1">1</a>
+                <a href="#page-2">2</a>
+                <a href="#page-3">3</a>
+                <a href="#more-pages">...</a>
+                <a href="#last-page">15</a>
+              </div>
+              <a href="#page-next">Вперед</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer class="app-footer">
       <div class="section-col">
