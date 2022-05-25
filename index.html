@@ -10,10 +10,10 @@
       <object class="app-logo" type="image/svg+xml" data="images/icons/logo.svg"></object>
 
       <div class="control-panel">
-        <form class="search_string" method="GET" action="#search-request">
-          <label class="search_string-input">
+        <form class="search_string" method="GET" action="https://echo.htmlacademy.ru/">
+          <label class="search_string-input" for="search-string">
             <object type="image/svg+xml" data="images/icons/search.svg"></object>
-            <input type="search" placeholder="Текст поиска"/>
+            <input id="search-string" type="search" placeholder="Текст поиска"/>
           </label>
           <button class="search_string submit" type="submit">Найти</button>
         </form>
@@ -106,32 +106,32 @@
             <div class="product-slider__additionals">
               <dl class="product-slider__content-features">
                 <div>
-                  <dd>800 м</dd>
-                  <dt>Дальность полета</dt>
+                  <dt>800 м</dt>
+                  <dd>Дальность полета</dd>
                 </div>
                 <div>
-                  <dd>50 м</dd>
-                  <dt>Фокусное расстояние</dt>
-                </div>
-              </dl>
-              <dl class="product-slider__content-features">
-                <div>
-                  <dd>48 часов</dd>
-                  <dt>Без подзарядки</dt>
+                  <dt>50 м</dt>
+                  <dd>Фокусное расстояние</dd>
                 </div>
               </dl>
               <dl class="product-slider__content-features">
                 <div>
-                  <dd>8,5 м</dd>
-                  <dt>Длина палки</dt>
+                  <dt>48 часов</dt>
+                  <dd>Без подзарядки</dd>
+                </div>
+              </dl>
+              <dl class="product-slider__content-features">
+                <div>
+                  <dt>8,5 м</dt>
+                  <dd>Длина палки</dd>
                 </div>
                 <div>
-                  <dd>5 кг</dd>
-                  <dt>Вес палки</dt>
+                  <dt>5 кг</dt>
+                  <dd>Вес палки</dd>
                 </div>
                 <div>
-                  <dd>Карбон</dd>
-                  <dt>Материал</dt>
+                  <dt>Карбон</dt>
+                  <dd>Материал</dd>
                 </div>
               </dl>
             </div>
@@ -181,18 +181,24 @@
       <section class="section-services">
         <div class="section-col">
           <div class="tab-switcher">
-            <label>
+            <div>
+              <label>
+                <input type="radio"/>
+              </label>
               <button class="line-btn">Доставка</button>
-              <input type="radio"/>
-            </label>
-            <label>
+            </div>
+            <div>
+              <label>
+                <input type="radio"/>
+              </label>
               <button class="line-btn">Гарантия</button>
-              <input type="radio"/>
-            </label>
-            <label>
+            </div>
+            <div>
+              <label>
+                <input type="radio"/>
+              </label>
               <button class="line-btn">Кредит</button>
-              <input type="radio"/>
-            </label>
+            </div>
           </div>
           <div class="tab-layout">
             <div class="tab">
@@ -265,14 +271,16 @@
             <h3>Время работы</h3>
             <ul class="implicit-list">
               <li>
-                пн-пт:
-                <time>c 10:00</time>
-                <time>до 22:00</time>
+                пн-пт: c
+                <time>10:00</time>
+                до
+                <time> 22:00</time>
               </li>
               <li>
-                сб-вс:
-                <time>c 10:00</time>
-                <time>до 19:00</time>
+                сб-вс: c
+                <time>10:00</time>
+                до
+                <time>19:00</time>
               </li>
             </ul>
             <button class="line-btn">напишите нам</button>
@@ -280,15 +288,15 @@
         </div>
       </section>
 
-      <form class="section-subscribe" method="GET" action="#subscribe">
+      <form class="section-subscribe" method="GET" action="https://echo.htmlacademy.ru/">
         <div class="section-col">
           <h2>Подпишитесь на рассылку</h2>
 
           <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
           <div class="subscribe-input">
-            <label>
-              <input class="square-input" type="text"/>
+            <label for="subscribe-email">
+              <input id="subscribe-email" class="square-input" type="text"/>
             </label>
             <button class="square-btn">Подписаться</button>
           </div>
