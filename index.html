@@ -6,130 +6,136 @@
     <link rel="icon" href="favicon.svg">
   </head>
   <body>
-    <header class="app_header section-col">
-      <object class="app-logo" type="image/svg+xml" data="images/icons/logo.svg"></object>
+    <header class="doc-header">
+      <a class="doc-header__logo"></a>
 
-      <div class="control-panel">
-        <form class="search_string" method="GET" action="https://echo.htmlacademy.ru/">
-          <label class="search_string-input" for="search-string">
-            <object type="image/svg+xml" data="images/icons/search.svg"></object>
-            <input id="search-string" type="search" placeholder="Текст поиска"/>
+      <div class="doc-header__control-panel">
+        <form class="search-string" method="GET" action="https://echo.htmlacademy.ru/">
+          <label class="search-string__input-wrapper" for="search-string__input">
+            <input id="search-string__input" type="search" placeholder="Текст поиска"/>
           </label>
-          <button class="search_string submit" type="submit">Найти</button>
+          <button class="search-string__submit" type="submit">Найти</button>
         </form>
-        <button class="icon-btn login-btn">
-          <object class="app-icon cart-icon" type="image/svg+xml" data="images/icons/login.svg"></object>
-          Войти
-        </button>
-        <button class="icon-btn compare-btn">
-          <object class="app-icon cart-icon" type="image/svg+xml" data="images/icons/compare.svg"></object>
-          Сравнить
-        </button>
-        <button class="icon-btn cart-btn">
-          <span class="cart">
-            <span class="cart-counter">2</span>
-            <object class="app-icon cart-icon" type="image/svg+xml" data="images/icons/cart.svg"></object>
-          </span>
+        <button class="string-btn login-btn">Войти</button>
+        <button class="string-btn compare-btn">Сравнить</button>
+        <button class="string-btn cart-btn">
+          <span class="cart-btn__counter">2</span>
           Корзина
         </button>
       </div>
 
-      <nav class="nav-panel">
-        <div class="nav-sections">
-          <a href="#">Каталог товаров</a>
-          <a href="#">Доставка</a>
-          <a href="#">Гарантия</a>
-          <a href="#">Контакты</a>
-        </div>
-        <button class="nav-toggle">
-          <object type="image/svg+xml" data="images/icons/plus.svg"></object>
+      <nav class="doc-header__nav-panel">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Доставка</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Гарантия</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <button class="app-header__hidden-toggle">
+          <span class="visually-hidden">Показать категории каталога</span>
         </button>
-        <div class="nav-catalog">
-          <a href="#">Виртуальная реальность</a>
-          <a href="#">Моноподы для селфи</a>
-          <a href="#">Экшн-камеры</a>
-          <a href="#">Фитнес-браслеты</a>
-          <a href="#">Умные часы</a>
-          <a href="#">Квадрокоптеры</a>
-        </div>
+        <ul class="nav-list-catalog">
+          <li class="nav-list-catalog__item">
+            <a class="nav-list-catalog__link" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="nav-list-catalog__item">
+            <a class="nav-list-catalog__link" href="#">Моноподы для селфи</a>
+          </li>
+          <li class="nav-list-catalog__item">
+            <a class="nav-list-catalog__link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="nav-list-catalog__item">
+            <a class="nav-list-catalog__link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="nav-list-catalog__item">
+            <a class="nav-list-catalog__link" href="#">Умные часы</a>
+          </li>
+          <li class="nav-list-catalog__item">
+            <a class="nav-list-catalog__link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <main>
-      <section class="section-landing section-col">
-        <div class="product-slider">
-          <button class="product-slider-control__slide-next">
-            <object type="image/svg+xml" data="images/icons/left-tall-arrow.svg"></object>
-          </button>
-          <div class="product-slider__image-slides">
+    <main class="doc-main">
+      <section class="doc-promo">
+        <div class="catalog-slider doc-promo__slider">
+          <button class="catalog-slider__next-slide"></button>
+          <div class="catalog-slider__slideshow">
             <img src="images/content/slider-1.png" alt="Квадрокоптер">
             <img src="images/content/slider-2.png" alt="Фитнес трекер">
             <img src="images/content/slider-3.png" alt="Монопод">
           </div>
-          <button class="product-slider-control__slide-prev">
-            <object type="image/svg+xml" data="images/icons/right-tall-arrow.svg"></object>
-          </button>
-          <div class="product-slider__content-column">
-            <div class="product-slider_counter">
+          <button class="catalog-slider__prev-slide"></button>
+          <div class="catalog-slider__content-column">
+            <div class="catalog-slider__counter">
               <span class="product-slider_number">01</span>
               <span class="product-slider_number">02</span>
               <span class="product-slider_number">03</span>
             </div>
-            <div class="product-slider__content-slides">
-              <div class="product-slider__seo-text">
+            <div class="catalog-slider__content-slides">
+              <div class="catalog-slider__seo-text">
                 <h2>Порхает как бабочка, жалит как пчела!</h2>
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               </div>
-              <div class="product-slider__seo-text">
+              <div class="catalog-slider__seo-text">
                 <h2>Худеем правильно!</h2>
                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               </div>
-              <div class="product-slider__seo-text">
+              <div class="catalog-slider__seo-text">
                 <h2>Делай селфи, как Бен Стиллер!</h2>
                 <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               </div>
             </div>
-            <div class="product-slider__content-info">
-              <a class="line-btn" href="#product-page">Подробнее</a>
-              <div class="slide-column">
-                <label>
-                  <input type="radio"/>
+            <div class="catalog-slider__state-info">
+              <a class="line-btn anchor-btn" href="catalog.html/#product-page">Подробнее</a>
+              <div class="catalog-slider__progress-list progress-list">
+                <label class="progress-list__progress-point">
+                  <input class="progress-list__progress-input" type="radio"/>
                 </label>
-                <label>
-                  <input type="radio"/>
+                <label class="progress-list__progress-point">
+                  <input class="progress-list__progress-input" type="radio"/>
                 </label>
-                <label>
-                  <input type="radio"/>
+                <label class="progress-list__progress-point">
+                  <input class="progress-list__progress-input" type="radio"/>
                 </label>
               </div>
             </div>
-            <div class="product-slider__additionals">
-              <dl class="product-slider__content-features">
-                <div>
+            <div class="catalog-slider__additions">
+              <dl class="catalog-slider__features-list">
+                <div class="catalog-slider__feature">
                   <dt>800 м</dt>
                   <dd>Дальность полета</dd>
                 </div>
-                <div>
+                <div class="catalog-slider__feature">
                   <dt>50 м</dt>
                   <dd>Фокусное расстояние</dd>
                 </div>
               </dl>
-              <dl class="product-slider__content-features">
-                <div>
+              <dl class="catalog-slider__features-list">
+                <div class="catalog-slider__feature">
                   <dt>48 часов</dt>
                   <dd>Без подзарядки</dd>
                 </div>
               </dl>
-              <dl class="product-slider__content-features">
-                <div>
+              <dl class="catalog-slider__features-list">
+                <div class="catalog-slider__feature">
                   <dt>8,5 м</dt>
                   <dd>Длина палки</dd>
                 </div>
-                <div>
+                <div class="catalog-slider__feature">
                   <dt>5 кг</dt>
                   <dd>Вес палки</dd>
                 </div>
-                <div>
+                <div class="catalog-slider__feature">
                   <dt>Карбон</dt>
                   <dd>Материал</dd>
                 </div>
@@ -138,42 +144,24 @@
           </div>
         </div>
 
-        <ul class="features-list">
-          <li class="feature-item">
-            <div class="feature-miniature">
-              <object type="image/svg+xml" data="images/features/feature-1.svg"></object>
-              <h4>Виртуальная реальность</h4>
-            </div>
+        <ul class="category-list doc-promo__category-list">
+          <li class="category-list__item">
+            <a class="category-list__anchor" href="catalog.html/#">Виртуальная реальность</a>
           </li>
-          <li class="feature-item">
-            <div class="feature-miniature">
-              <object type="image/svg+xml" data="images/features/feature-2.svg"></object>
-              <h4>Моноподы для селфи</h4>
-            </div>
+          <li class="category-list__item">
+            <a class="category-list__anchor" href="catalog.html/#">Моноподы для селфи</a>
           </li>
-          <li class="feature-item">
-            <div class="feature-miniature">
-              <object type="image/svg+xml" data="images/features/feature-3.svg"></object>
-              <h4>Экшн-камеры</h4>
-            </div>
+          <li class="category-list__item">
+            <a class="category-list__anchor" href="catalog.html/#">Экшн-камеры</a>
           </li>
-          <li class="feature-item">
-            <div class="feature-miniature">
-              <object type="image/svg+xml" data="images/features/feature-4.svg"></object>
-              <h4>Фитнес-браслеты</h4>
-            </div>
+          <li class="category-list__item">
+            <a class="category-list__anchor" href="catalog.html/#">Фитнес-браслеты</a>
           </li>
-          <li class="feature-item">
-            <div class="feature-miniature">
-              <object type="image/svg+xml" data="images/features/feature-5.svg"></object>
-              <h4>Умные часы</h4>
-            </div>
+          <li class="category-list__item">
+            <a class="category-list__anchor" href="catalog.html/#">Умные часы</a>
           </li>
-          <li class="feature-item">
-            <div class="feature-miniature">
-              <object type="image/svg+xml" data="images/features/feature-6.svg"></object>
-              <h4>Квадрокоптеры</h4>
-            </div>
+          <li class="category-list__item">
+            <a class="category-list__anchor" href="catalog.html/#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
