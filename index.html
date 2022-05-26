@@ -6,13 +6,14 @@
     <link rel="icon" href="favicon.svg">
   </head>
   <body>
+    <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
     <header class="doc-header">
       <a class="doc-header__logo"></a>
 
       <div class="doc-header__control-panel">
         <form class="search-string" method="GET" action="https://echo.htmlacademy.ru/">
-          <label class="search-string__input-wrapper" for="search-string__input">
-            <input id="search-string__input" type="search" placeholder="Текст поиска"/>
+          <label class="search-string__input-wrapper" for="search-input">
+            <input id="search-input" class="search-input" type="search" placeholder="Текст поиска"/>
           </label>
           <button class="search-string__submit" type="submit">Найти</button>
         </form>
@@ -67,6 +68,7 @@
 
     <main class="doc-main">
       <section class="doc-promo">
+        <h2 class="visually-hidden">Каталог-промо</h2>
         <div class="catalog-slider doc-promo__slider">
           <button class="catalog-slider__next-slide"></button>
           <div class="catalog-slider__slideshow">
@@ -83,15 +85,15 @@
             </div>
             <div class="catalog-slider__content-slides">
               <div class="catalog-slider__seo-text">
-                <h2>Порхает как бабочка, жалит как пчела!</h2>
+                <strong class="main-title">Порхает как бабочка, жалит как пчела!</strong>
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               </div>
               <div class="catalog-slider__seo-text">
-                <h2>Худеем правильно!</h2>
+                <strong class="main-title">Худеем правильно!</strong>
                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               </div>
               <div class="catalog-slider__seo-text">
-                <h2>Делай селфи, как Бен Стиллер!</h2>
+                <strong class="main-title">Делай селфи, как Бен Стиллер!</strong>
                 <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               </div>
             </div>
@@ -166,50 +168,39 @@
         </ul>
       </section>
 
-      <section class="section-services">
-        <div class="section-col">
-          <div class="tab-switcher">
-            <div>
-              <label>
-                <input type="radio"/>
-              </label>
-              <button class="line-btn">Доставка</button>
-            </div>
-            <div>
-              <label>
-                <input type="radio"/>
-              </label>
-              <button class="line-btn">Гарантия</button>
-            </div>
-            <div>
-              <label>
-                <input type="radio"/>
-              </label>
-              <button class="line-btn">Кредит</button>
-            </div>
+      <section class="tabs-list doc-services">
+        <div class="tabs-list__switcher">
+          <div>
+            <label class="line-btn tabs-list__switch">
+              Доставка
+              <input type="radio" name="tabs-list"/>
+            </label>
           </div>
-          <div class="tab-layout">
-            <div class="tab">
-              <h2 class="header text-xl">Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              <div class="tab-icon">
-                <object type="image/svg+xml" data="images/icons/service-delivery.svg"></object>
-              </div>
-            </div>
-            <div class="tab">
-              <h2 class="header text-xl">Гарантия</h2>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-              <div class="tab-icon">
-                <object type="image/svg+xml" data="images/icons/service-garanty.svg"></object>
-              </div>
-            </div>
-            <div class="tab">
-              <h2 class="header text-xl">Кредит</h2>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-              <div class="tab-icon">
-                <object type="image/svg+xml" data="images/icons/service-credit.svg"></object>
-              </div>
-            </div>
+          <div>
+            <label class="line-btn tabs-list__switch">
+              Гарантия
+              <input type="radio" name="tabs-list"/>
+            </label>
+          </div>
+          <div>
+            <label class="line-btn tabs-list__switch">
+              Кредит
+              <input type="radio" name="tabs-list"/>
+            </label>
+          </div>
+        </div>
+        <div class="tabs-list__tab-layout">
+          <div class="tabs-list__tab">
+            <h2 class="main-title">Доставка</h2>
+            <p class="text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div class="tabs-list__tab">
+            <h2 class="main-title">Гарантия</h2>
+            <p class="text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </div>
+          <div class="tab">
+            <h2 class="main-title">Кредит</h2>
+            <p class="text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
           </div>
         </div>
       </section>
@@ -245,7 +236,6 @@
           <h2 class="header text-xl">Контакты</h2>
           <div class="indented-row-box">
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
-            <h1 class="header text-lg">Интернет магазин "Девайс"</h1>
             <address>
               <ul class="implicit-list">
                 <li>
