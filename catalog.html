@@ -6,61 +6,76 @@
     <link rel="icon" href="favicon.svg">
   </head>
   <body>
-    <header class="app_header section-col">
-      <object class="app-logo" type="image/svg+xml" data="images/icons/logo.svg"></object>
+    <h1 class="visually-hidden">Каталог интернет магазина "Девайс"</h1>
+    <header class="doc-header">
+      <a class="doc-logo doc-header__doc-logo"></a>
 
-      <div class="control-panel">
-        <form class="search_string" method="GET" action="https://echo.htmlacademy.ru/">
-          <label class="search_string-input">
-            <object type="image/svg+xml" data="images/icons/search.svg"></object>
-            <input type="search" placeholder="Текст поиска"/>
+      <div class="doc-header__control-panel">
+        <form class="search-string" method="GET" action="https://echo.htmlacademy.ru/">
+          <label class="search-string__input-wrapper" for="search-input">
+            <input id="search-input" class="search-input" type="search" placeholder="Текст поиска"/>
           </label>
-          <button class="search_string submit" type="submit">Найти</button>
+          <button class="search-string__submit" type="submit">Найти</button>
         </form>
-        <button class="icon-btn login-btn">
-          <object class="app-icon cart-icon" type="image/svg+xml" data="images/icons/login.svg"></object>
+        <a href="#" class="string-btn profile-btn">
           Николай Куропаткин
-        </button>
-        <button class="logout-btn">
+        </a>
+        <button class="string-btn logout-btn">
           Выйти
         </button>
-        <button class="icon-btn compare-btn">
-          <object class="app-icon cart-icon" type="image/svg+xml" data="images/icons/compare.svg"></object>
-          Сравнить
-        </button>
-        <button class="icon-btn cart-btn">
-          <span class="cart">
-            <span class="cart-counter">2</span>
-            <object class="app-icon cart-icon" type="image/svg+xml" data="images/icons/cart.svg"></object>
-          </span>
+        <button class="string-btn compare-btn">Сравнить</button>
+        <button class="string-btn cart-btn">
+          <span class="cart-btn__counter">2</span>
           Корзина
         </button>
       </div>
 
-      <nav class="nav-panel">
-        <div class="nav-sections">
-          <a href="#">Каталог товаров</a>
-          <a href="#">Доставка</a>
-          <a href="#">Гарантия</a>
-          <a href="#">Контакты</a>
-        </div>
-        <button class="nav-toggle">
-          <object type="image/svg+xml" data="images/icons/plus.svg"></object>
+      <nav class="doc-header__nav-panel">
+        <h2 class="visually-hidden">Доступное</h2>
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Доставка</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Гарантия</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <button class="app-header__hidden-toggle">
+          <span class="visually-hidden">Показать категории каталога</span>
         </button>
-        <div class="nav-catalog">
-          <a href="#">Виртуальная реальность</a>
-          <a href="#">Моноподы для селфи</a>
-          <a href="#">Экшн-камеры</a>
-          <a href="#">Фитнес-браслеты</a>
-          <a href="#">Умные часы</a>
-          <a href="#">Квадрокоптеры</a>
-        </div>
+        <ul class="nav-list-catalog">
+          <li class="nav-list-catalog__item">
+            <a class="nav-list-catalog__link" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="nav-list-catalog__item">
+            <a class="nav-list-catalog__link" href="#">Моноподы для селфи</a>
+          </li>
+          <li class="nav-list-catalog__item">
+            <a class="nav-list-catalog__link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="nav-list-catalog__item">
+            <a class="nav-list-catalog__link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="nav-list-catalog__item">
+            <a class="nav-list-catalog__link" href="#">Умные часы</a>
+          </li>
+          <li class="nav-list-catalog__item">
+            <a class="nav-list-catalog__link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="doc-main">
       <div class="breadcrumbs section-col">
-        <h1 class="header text-xl">Моноподы для селфи</h1>
+        <h2 class="main-title">Моноподы для селфи</h2>
+
         <ul>
           <li>
             Главная
@@ -73,6 +88,7 @@
           <li>Моноподы для селфи</li>
         </ul>
       </div>
+
       <div class="catalog section-col">
         <form class="catalog-sidebar-filter" method="GET" action="https://echo.htmlacademy.ru/">
           <h4>Фильтр</h4>
@@ -125,6 +141,7 @@
           </div>
           <button type="submit" class="line-btn">Показать</button>
         </form>
+
         <div class="catalog-list-wrapper">
           <div class="catalog-sort-panel">
             <label>
@@ -185,40 +202,43 @@
       </div>
     </main>
 
-    <footer class="app-footer">
-      <div class="section-col">
-        <object class="app-logo" data="images/icons/logo-yellow.svg" type="image/svg+xml"></object>
-        <address class="address-locale">
-          <a class="map-link" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
-        </address>
-        <hr class="line-decor bg-yellow"/>
-        <ul class="article-section-menu">
-          <li>
-            <a href="#">доставка</a>
-          </li>
-          <li>
-            <a href="#">гарантия</a>
-          </li>
-          <li>
-            <a href="#">контакты</a>
-          </li>
-        </ul>
-        <ul class="social-menu">
-          <li>
-            <a href="#">telegram</a>
-          </li>
-          <li>
-            <a href="#">youtube</a>
-          </li>
-          <li>
-            <a href="#">twitter</a>
-          </li>
-        </ul>
-        <address class="address-contact">
-          <a class="text-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-        </address>
-        <object class="htmlacademy-logo" data="images/icons/logo_htmlacademy.svg"></object>
-      </div>
+    <footer class="doc-footer">
+      <a class="doc-logo header__doc-logo"></a>
+      <address class="address-location">
+        <a class="small-text small-text_inverted" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
+      </address>
+      <ul class="article-section-menu">
+        <li>
+          <a href="#">доставка</a>
+        </li>
+        <li>
+          <a href="#">гарантия</a>
+        </li>
+        <li>
+          <a href="#">контакты</a>
+        </li>
+      </ul>
+      <ul class="social-menu">
+        <li class="nav-list-short">
+          <a class="social-icon" href="#">
+            <span class="social-icon__name">telegram</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-icon" href="#">
+            <span class="social-icon__name">youtube</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-icon" href="#">
+            <span class="social-icon__name">twitter</span>
+          </a>
+        </li>
+      </ul>
+      <address class="address-contact">
+        <a class="anchor-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+      </address>
+      <a class="doc-vendor__logo" href="https://htmlacademy.ru/"></a>
     </footer>
   </body>
 </html>
