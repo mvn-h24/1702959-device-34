@@ -4,33 +4,29 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс - Каталог - Моноподы для селфи</title>
     <link rel="icon" href="favicon.svg">
+    <link rel="stylesheet" href="styles/document.css">
   </head>
   <body>
     <h1 class="visually-hidden">Каталог интернет магазина "Девайс"</h1>
     <header class="doc-header">
       <a class="doc-logo doc-header__doc-logo"></a>
 
-      <div class="doc-header__control-panel">
+      <div class="control-panel">
         <form class="search-string" method="GET" action="https://echo.htmlacademy.ru/">
           <label class="search-string__input-wrapper" for="search-input">
-            <input id="search-input" class="search-input" type="search" placeholder="Текст поиска"/>
+            <input class="search-string__input" name="query" id="search-input" type="search" placeholder="Текст поиска"/>
           </label>
           <button class="search-string__submit" type="submit">Найти</button>
         </form>
-        <a href="#" class="string-btn profile-btn">
-          Николай Куропаткин
-        </a>
-        <button class="string-btn logout-btn">
-          Выйти
-        </button>
-        <button class="string-btn compare-btn">Сравнить</button>
-        <button class="string-btn cart-btn">
+        <a href="#" class="string-btn login-btn">Войти</a>
+        <a href="#" class="string-btn compare-btn">Сравнить</a>
+        <a href="#" class="string-btn cart-btn">
           <span class="cart-btn__counter">2</span>
           Корзина
-        </button>
+        </a>
       </div>
 
-      <nav class="doc-header__nav-panel">
+      <nav class="nav-panel">
         <h2 class="visually-hidden">Доступное</h2>
         <ul class="nav-list">
           <li class="nav-list__item">
@@ -46,15 +42,15 @@
             <a class="nav-list__link" href="#">Контакты</a>
           </li>
         </ul>
-        <button class="app-header__hidden-toggle">
+        <button class="btn-toggle-hidden">
           <span class="visually-hidden">Показать категории каталога</span>
         </button>
         <ul class="nav-list-catalog">
           <li class="nav-list-catalog__item">
             <a class="nav-list-catalog__link" href="#">Виртуальная реальность</a>
           </li>
-          <li class="nav-list-catalog__item">
-            <a class="nav-list-catalog__link" href="#">Моноподы для селфи</a>
+          <li class="nav-list-item">
+            <a class="nav-list-catalog__link" href="catalog.html">Моноподы для селфи</a>
           </li>
           <li class="nav-list-catalog__item">
             <a class="nav-list-catalog__link" href="#">Экшн-камеры</a>
@@ -205,33 +201,33 @@
     <footer class="doc-footer">
       <a class="doc-logo header__doc-logo"></a>
       <address class="address-location">
-        <a class="small-text small-text_inverted" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
+        <a class="address-location__implicit-anchor" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
       </address>
       <ul class="article-section-menu">
-        <li>
-          <a href="#">доставка</a>
+        <li class="article-section-menu__item">
+          <a class="article-section-menu__anchor" href="#">доставка</a>
         </li>
-        <li>
-          <a href="#">гарантия</a>
+        <li class="article-section-menu__item">
+          <a class="article-section-menu__anchor" href="#">гарантия</a>
         </li>
-        <li>
-          <a href="#">контакты</a>
+        <li class="article-section-menu__item">
+          <a class="article-section-menu__anchor" href="#">контакты</a>
         </li>
       </ul>
       <ul class="social-menu">
-        <li class="nav-list-short">
+        <li class="social-menu__item">
           <a class="social-icon" href="#">
-            <span class="social-icon__name">telegram</span>
+            <span class="visually-hidden">telegram</span>
           </a>
         </li>
-        <li>
+        <li class="social-menu__item">
           <a class="social-icon" href="#">
-            <span class="social-icon__name">youtube</span>
+            <span class="visually-hidden">youtube</span>
           </a>
         </li>
-        <li>
+        <li class="social-menu__item">
           <a class="social-icon" href="#">
-            <span class="social-icon__name">twitter</span>
+            <span class="visually-hidden">twitter</span>
           </a>
         </li>
       </ul>
