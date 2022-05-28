@@ -71,7 +71,7 @@
     <main class="doc-main">
       <section class="doc-promo">
         <h2 class="visually-hidden">Промо-каталог</h2>
-        <div class="catalog-slider doc-promo__catalog-slider">
+        <div class="catalog-slider">
           <div class="catalog-slider__slideshow-column">
             <div class="catalog-slider__slideshow-layout">
               <img class="catalog-slider__slide" src="images/content/slider-1.png" alt="Квадрокоптер">
@@ -89,9 +89,9 @@
           </div>
           <div class="catalog-slider__content-column">
             <div class="catalog-slider__counter">
-              <span class="product-slider_number">01</span>
-              <span class="product-slider_number hidden">02</span>
-              <span class="product-slider_number hidden">03</span>
+              <span class="catalog-slider_number">01</span>
+              <span class="catalog-slider_number hidden">02</span>
+              <span class="catalog-slider_number hidden">03</span>
             </div>
             <div class="catalog-slider__content-slides">
               <div class="catalog-slider__seo-info">
@@ -162,7 +162,7 @@
           </div>
         </div>
 
-        <ul class="category-list doc-promo__category-list">
+        <ul class="category-list">
           <li class="category-list__item">
             <a class="category-list__anchor" href="catalog.html/#">Виртуальная реальность</a>
           </li>
@@ -186,37 +186,31 @@
 
       <section class="tabs-list doc-services">
         <div class="tabs-list__switcher">
-          <div>
-            <label class="line-btn tabs-list__switch">
-              Доставка
-              <input type="radio" name="tabs-list"/>
-            </label>
-          </div>
-          <div>
-            <label class="line-btn tabs-list__switch">
-              Гарантия
-              <input type="radio" name="tabs-list"/>
-            </label>
-          </div>
-          <div>
-            <label class="line-btn tabs-list__switch">
-              Кредит
-              <input type="radio" name="tabs-list"/>
-            </label>
-          </div>
+          <label class="line-btn tabs-list__switch tabs-list__switch_current">
+            Доставка
+            <input type="radio" name="tabs-list"/>
+          </label>
+          <label class="line-btn tabs-list__switch">
+            Гарантия
+            <input type="radio" name="tabs-list"/>
+          </label>
+          <label class="line-btn tabs-list__switch">
+            Кредит
+            <input type="radio" name="tabs-list"/>
+          </label>
         </div>
         <div class="tabs-list__tab-layout">
           <div class="service-summary service-summary__delivery">
-            <h2 class="main-title">Доставка</h2>
-            <p class="text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <h2 class="service-summary__title">Доставка</h2>
+            <p class="service-summary__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
-          <div class="tabs-list__tab">
-            <h2 class="main-title">Гарантия</h2>
-            <p class="text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          <div class="service-summary service-summary__garanty">
+            <h2 class="service-summary__title">Гарантия</h2>
+            <p class="service-summary__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </div>
-          <div class="tab">
-            <h2 class="main-title">Кредит</h2>
-            <p class="text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+          <div class="service-summary service-summary__credit">
+            <h2 class="service-summary__title">Кредит</h2>
+            <p class="service-summary__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
           </div>
         </div>
       </section>
