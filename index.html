@@ -4,28 +4,29 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="icon" href="favicon.svg">
+    <link rel="stylesheet" href="styles/document.css">
   </head>
   <body>
     <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
     <header class="doc-header">
       <a class="doc-logo doc-header__doc-logo"></a>
 
-      <div class="doc-header__control-panel">
+      <div class="control-panel">
         <form class="search-string" method="GET" action="https://echo.htmlacademy.ru/">
           <label class="search-string__input-wrapper" for="search-input">
-            <input id="search-input" class="search-input" type="search" placeholder="Текст поиска"/>
+            <input class="search-string__input" name="query" id="search-input" type="search" placeholder="Текст поиска"/>
           </label>
           <button class="search-string__submit" type="submit">Найти</button>
         </form>
-        <button class="string-btn login-btn">Войти</button>
-        <button class="string-btn compare-btn">Сравнить</button>
-        <button class="string-btn cart-btn">
+        <a href="#" class="string-btn login-btn">Войти</a>
+        <a href="#" class="string-btn compare-btn">Сравнить</a>
+        <a href="#" class="string-btn cart-btn">
           <span class="cart-btn__counter">2</span>
           Корзина
-        </button>
+        </a>
       </div>
 
-      <nav class="doc-header__nav-panel">
+      <nav class="nav-panel">
         <h2 class="visually-hidden">Доступное</h2>
         <ul class="nav-list">
           <li class="nav-list__item">
@@ -41,14 +42,14 @@
             <a class="nav-list__link" href="#">Контакты</a>
           </li>
         </ul>
-        <button class="app-header__hidden-toggle">
+        <button class="btn-toggle-hidden">
           <span class="visually-hidden">Показать категории каталога</span>
         </button>
         <ul class="nav-list-catalog">
           <li class="nav-list-catalog__item">
             <a class="nav-list-catalog__link" href="#">Виртуальная реальность</a>
           </li>
-          <li class="nav-list-catalog__item">
+          <li class="nav-list-item">
             <a class="nav-list-catalog__link" href="#">Моноподы для селфи</a>
           </li>
           <li class="nav-list-catalog__item">
@@ -69,78 +70,92 @@
 
     <main class="doc-main">
       <section class="doc-promo">
-        <h2 class="visually-hidden">Каталог-промо</h2>
-        <div class="catalog-slider doc-promo__slider">
-          <button class="catalog-slider__next-slide"></button>
-          <div class="catalog-slider__slideshow">
-            <img src="images/content/slider-1.png" alt="Квадрокоптер">
-            <img src="images/content/slider-2.png" alt="Фитнес трекер">
-            <img src="images/content/slider-3.png" alt="Монопод">
+        <h2 class="visually-hidden">Промо-каталог</h2>
+        <div class="catalog-slider doc-promo__catalog-slider">
+          <div class="catalog-slider__slideshow-column">
+            <div class="catalog-slider__slideshow-layout">
+              <img class="catalog-slider__slide" src="images/content/slider-1.png" alt="Квадрокоптер">
+              <img class="catalog-slider__slide hidden" src="images/content/slider-2.png" alt="Фитнес трекер">
+              <img class="catalog-slider__slide hidden" src="images/content/slider-3.png" alt="Монопод">
+            </div>
+            <div class="catalog-slider__slideshow-control">
+              <button class="catalog-slider__next-slide">
+                <span class="visually-hidden">Следующий товар</span>
+              </button>
+              <button class="catalog-slider__prev-slide">
+                <span class="visually-hidden">Предыдущий товар</span>
+              </button>
+            </div>
           </div>
-          <button class="catalog-slider__prev-slide"></button>
           <div class="catalog-slider__content-column">
             <div class="catalog-slider__counter">
               <span class="product-slider_number">01</span>
-              <span class="product-slider_number">02</span>
-              <span class="product-slider_number">03</span>
+              <span class="product-slider_number hidden">02</span>
+              <span class="product-slider_number hidden">03</span>
             </div>
             <div class="catalog-slider__content-slides">
-              <div class="catalog-slider__seo-text">
-                <strong class="main-title">Порхает как бабочка, жалит как пчела!</strong>
-                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <div class="catalog-slider__seo-info">
+                <strong class="catalog-slider__seo-title">Порхает как бабочка, жалит как пчела!</strong>
+                <p class="catalog-slider__seo-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               </div>
-              <div class="catalog-slider__seo-text">
-                <strong class="main-title">Худеем правильно!</strong>
-                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <div class="catalog-slider__seo-info hidden">
+                <strong class="catalog-slider__seo-title">Худеем правильно!</strong>
+                <p class="catalog-slider__seo-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               </div>
-              <div class="catalog-slider__seo-text">
-                <strong class="main-title">Делай селфи, как Бен Стиллер!</strong>
-                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <div class="catalog-slider__seo-info hidden">
+                <strong class="catalog-slider__seo-title">Делай селфи, как Бен Стиллер!</strong>
+                <p class="catalog-slider__seo-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               </div>
             </div>
             <div class="catalog-slider__state-info">
               <a class="line-btn anchor-btn" href="catalog.html/#product-page">Подробнее</a>
-              <div class="catalog-slider__progress-list progress-list">
-                <label class="progress-list__progress-point">
-                  <input class="progress-list__progress-input" type="radio"/>
+              <div class="catalog-slider__pagination-list pagination-list">
+                <label class="pagination-list__point">
+                  <span class="visually-hidden">Слайд 1
+                    <input class="progress-list__pagination-input" type="radio"/>
+                  </span>
                 </label>
-                <label class="progress-list__progress-point">
-                  <input class="progress-list__progress-input" type="radio"/>
+                <label class="progress-list__pagination-point">
+                  <span class="visually-hidden">Слайд 2
+                    <input class="progress-list__pagination-input" type="radio">
+                  </span>
                 </label>
-                <label class="progress-list__progress-point">
-                  <input class="progress-list__progress-input" type="radio"/>
+                <label class="progress-list__pagination-point">
+                  <span class="visually-hidden">Слайд 3
+                    <input class="progress-list__pagination-input" type="radio">
+                  </span>
                 </label>
               </div>
             </div>
             <div class="catalog-slider__additions">
-              <dl class="catalog-slider__features-list">
-                <div class="catalog-slider__feature">
-                  <dt>800 м</dt>
-                  <dd>Дальность полета</dd>
+              <dl class="features-list">
+                <div class="features-list__item">
+                  <dt class="features-list__item-title">Дальность полета</dt>
+                  <dd class="features-list__item-value">800 м</dd>
                 </div>
-                <div class="catalog-slider__feature">
-                  <dt>50 м</dt>
-                  <dd>Фокусное расстояние</dd>
-                </div>
-              </dl>
-              <dl class="catalog-slider__features-list">
-                <div class="catalog-slider__feature">
-                  <dt>48 часов</dt>
-                  <dd>Без подзарядки</dd>
+                <div class="features-list__item">
+                  <dt class="features-list__item-title">Фокусное расстояние</dt>
+                  <dd class="features-list__item-value">50 м</dd>
                 </div>
               </dl>
-              <dl class="catalog-slider__features-list">
-                <div class="catalog-slider__feature">
-                  <dt>8,5 м</dt>
-                  <dd>Длина палки</dd>
+              <dl class="features-list hidden">
+                <div class="features-list__item">
+                  <dt class="features-list__item-title">Без подзарядки</dt>
+                  <dd class="features-list__item-value">48 часов</dd>
                 </div>
-                <div class="catalog-slider__feature">
-                  <dt>5 кг</dt>
-                  <dd>Вес палки</dd>
+              </dl>
+              <dl class="features-list hidden">
+                <div class="features-list__item">
+                  <dt class="features-list__item-title">Длина палки</dt>
+                  <dd class="features-list__item-value">8,5 м</dd>
                 </div>
-                <div class="catalog-slider__feature">
-                  <dt>Карбон</dt>
-                  <dd>Материал</dd>
+                <div class="features-list__item">
+                  <dt class="features-list__item-title">Вес палки</dt>
+                  <dd class="features-list__item-value">5 кг</dd>
+                </div>
+                <div class="features-list__item">
+                  <dt class="features-list__item-title">Материал</dt>
+                  <dd class="features-list__item-value">Карбон</dd>
                 </div>
               </dl>
             </div>
@@ -191,7 +206,7 @@
           </div>
         </div>
         <div class="tabs-list__tab-layout">
-          <div class="tabs-list__tab">
+          <div class="service-summary service-summary__delivery">
             <h2 class="main-title">Доставка</h2>
             <p class="text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
