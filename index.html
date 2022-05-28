@@ -215,41 +215,43 @@
         </div>
       </section>
 
-      <section class="doc-about-us">
-        <div class="notify notify-info">
-          <p class="notify__message title-2">Доставим редкий товар под заказ</p>
+      <section class="columns-layout columns-layout_two-columns doc-about-us">
+        <div class="notify notify__info-message columns-layout__notify">
+          <p class="notify__message">Доставим редкий товар под заказ</p>
         </div>
 
-        <div class="doc-about-us__column">
-          <h2 class="main-title">О нас</h2>
-          <div class="indented-row-box">
-            <p class="text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-            <p class="text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-            <ul class="mark-list">
-              <li class="mark-list text-bold">Меловые линии</li>
-              <li class="mark-list text-bold">СДИК</li>
-              <li class="mark-list text-bold">ТоксБерри</li>
+        <div class="columns-layout__col">
+          <h2 class="columns-layout__col-heading">О нас</h2>
+          <div class="columns-layout__col-content">
+            <p class="columns-layout__par">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p class="columns-layout__par">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+            <ul class="mark-list indented-row-box__mark-list">
+              <li class="mark-list__item">Меловые линии</li>
+              <li class="mark-list__item">СДИК</li>
+              <li class="mark-list__item">ТоксБерри</li>
             </ul>
             <button class="line-btn">подробнее о нас</button>
           </div>
         </div>
 
-        <div class="doc-about-us__column">
-          <h2 class="main-title">Контакты</h2>
-          <div class="indented-row-box">
-            <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
-            <p class="title-3">Интернет-магазин «Девайс»</p>
+        <div class="columns-layout__col">
+          <h2 class="columns-layout__col-heading">Контакты</h2>
+          <div class="columns-layout__col-content">
+            <p class="columns-layout__par">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+            <p class="columns-layout__par">Интернет-магазин «Девайс»</p>
             <address class="contacts-list">
               <ul class="implicit-list">
                 <li class="implicit-list__item">
-                  <a class="text" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
+                  <address class="address-location">
+                    <a class="address-location__implicit-anchor" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
+                  </address>
                 </li>
                 <li class="implicit-list__item">
                   <a class="anchor-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
                 </li>
               </ul>
             </address>
-            <h2 class="title-3">Время работы</h2>
+            <h2 class="columns-layout__col-subheading">Время работы</h2>
             <ul class="implicit-list">
               <li class="implicit-list__item">
                 пн-пт: c
@@ -269,10 +271,10 @@
         </div>
       </section>
 
-      <form class="subscribe-form document-subscribe" method="GET" action="https://echo.htmlacademy.ru/">
-        <h3 class="main-title">Подпишитесь на рассылку</h3>
+      <form class="subscribe-form doc-subscribe" method="GET" action="https://echo.htmlacademy.ru/">
+        <h3 class="subscribe-form__title">Подпишитесь на рассылку</h3>
 
-        <p class="text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        <p class="subscribe-form__par">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
         <div class="subscribe-form__input-group">
           <label class="subscribe-form__input-wrapper" for="subscribe-email">
@@ -290,33 +292,33 @@
     <footer class="doc-footer">
       <a class="doc-logo header__doc-logo"></a>
       <address class="address-location">
-        <a class="small-text small-text_inverted" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
+        <a class="address-location__implicit-anchor" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
       </address>
       <ul class="article-section-menu">
-        <li>
-          <a href="#">доставка</a>
+        <li class="article-section-menu__item">
+          <a class="article-section-menu__anchor" href="#">доставка</a>
         </li>
-        <li>
-          <a href="#">гарантия</a>
+        <li class="article-section-menu__item">
+          <a class="article-section-menu__anchor" href="#">гарантия</a>
         </li>
-        <li>
-          <a href="#">контакты</a>
+        <li class="article-section-menu__item">
+          <a class="article-section-menu__anchor" href="#">контакты</a>
         </li>
       </ul>
       <ul class="social-menu">
-        <li class="nav-list-short">
+        <li class="social-menu__item">
           <a class="social-icon" href="#">
-            <span class="social-icon__name">telegram</span>
+            <span class="visually-hidden">telegram</span>
           </a>
         </li>
-        <li>
+        <li class="social-menu__item">
           <a class="social-icon" href="#">
-            <span class="social-icon__name">youtube</span>
+            <span class="visually-hidden">youtube</span>
           </a>
         </li>
-        <li>
+        <li class="social-menu__item">
           <a class="social-icon" href="#">
-            <span class="social-icon__name">twitter</span>
+            <span class="visually-hidden">twitter</span>
           </a>
         </li>
       </ul>
