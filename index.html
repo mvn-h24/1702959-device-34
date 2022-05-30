@@ -188,15 +188,15 @@
         <div class="tabs-list__switcher">
           <label class="line-btn tabs-list__switch tabs-list__switch_current">
             Доставка
-            <input type="radio" name="tabs-list"/>
+            <input class=visually-hidden type="radio" name="tabs-list"/>
           </label>
           <label class="line-btn tabs-list__switch">
             Гарантия
-            <input type="radio" name="tabs-list"/>
+            <input class=visually-hidden type="radio" name="tabs-list"/>
           </label>
           <label class="line-btn tabs-list__switch">
             Кредит
-            <input type="radio" name="tabs-list"/>
+            <input class=visually-hidden type="radio" name="tabs-list"/>
           </label>
         </div>
         <div class="tabs-list__tab-layout">
@@ -269,14 +269,14 @@
         </div>
       </section>
 
-      <form class="subscribe-form doc-subscribe" method="GET" action="https://echo.htmlacademy.ru/">
+      <form class="subscribe-form doc-subscribe" method="POST" action="https://echo.htmlacademy.ru/">
         <h3 class="subscribe-form__title">Подпишитесь на рассылку</h3>
 
         <p class="subscribe-form__par">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
         <div class="subscribe-form__input-group">
           <label class="subscribe-form__input-wrapper" for="subscribe-email">
-            <input class="subscribe-form__input" id="subscribe-email" type="text"/>
+            <input class="subscribe-form__input" name="email" id="subscribe-email" type="email"/>
           </label>
           <button class="subscribe-form__submit">Подписаться</button>
         </div>
