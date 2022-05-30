@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс - Каталог - Моноподы для селфи</title>
-    <link rel="icon" href="favicon.svg">
-    <link rel="stylesheet" href="styles/document.css">
+    <link href="favicon.svg" rel="icon">
+    <link href="styles/document.css" rel="stylesheet">
   </head>
   <body>
     <h1 class="visually-hidden">Каталог интернет магазина "Девайс"</h1>
@@ -12,15 +12,20 @@
       <a class="doc-logo doc-header__doc-logo"></a>
 
       <div class="control-panel">
-        <form class="search-string" method="GET" action="https://echo.htmlacademy.ru/">
+        <form class="search-string" action="https://echo.htmlacademy.ru/" method="GET">
           <label class="search-string__input-wrapper" for="search-input">
-            <input class="search-string__input" name="query" id="search-input" type="search" placeholder="Текст поиска"/>
+            <input class="search-string__input" id="search-input" name="query" placeholder="Текст поиска" type="search"/>
           </label>
           <button class="search-string__submit" type="submit">Найти</button>
         </form>
-        <a href="#" class="string-btn login-btn">Войти</a>
-        <a href="#" class="string-btn compare-btn">Сравнить</a>
-        <a href="#" class="string-btn cart-btn">
+        <button class="string-btn profile-btn">
+          Николай Куропаткин
+        </button>
+        <button class="string-btn logout-btn">
+          Выйти
+        </button>
+        <a class="string-btn compare-btn" href="#">Сравнить</a>
+        <a class="string-btn cart-btn" href="#">
           <span class="cart-btn__counter">2</span>
           Корзина
         </a>
@@ -69,73 +74,70 @@
     </header>
 
     <main class="doc-main">
-      <div class="breadcrumbs section-col">
-        <h2 class="main-title">Моноподы для селфи</h2>
+      <div class="breadcrumbs">
+        <h2 class="breadcrumbs__title">Моноподы для селфи</h2>
 
-        <ul>
-          <li>
-            Главная
-            <object type="image/svg+xml" data="images/icons/nav-arrow.svg"></object>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__list-item">
+            <a class="breadcrumbs__anchor" href="#">Главная</a>
           </li>
-          <li>
-            Каталог товаров
-            <object type="image/svg+xml" data="images/icons/nav-arrow.svg"></object>
+          <li class="breadcrumbs__list-item">
+            <a class="breadcrumbs__anchor" href="#">Каталог товаров</a>
           </li>
-          <li>Моноподы для селфи</li>
+          <li class="breadcrumbs__list-item">
+            <a class="breadcrumbs__anchor">Моноподы для селфи</a>
+          </li>
         </ul>
       </div>
 
-      <div class="catalog section-col">
-        <form class="catalog-sidebar-filter" method="GET" action="https://echo.htmlacademy.ru/">
-          <h4>Фильтр</h4>
-          <div class="catalog-sidebar-filter__filter-prop">
-            <hr/>
-            <h5>Стоимость</h5>
-            <div class="price-slider">
-              <label class="price-label" for="bottom-price"></label>
-              <input id="bottom-price" type="range" min="0" value="100000" max="1000000"/>
+      <div class="catalog">
+        <form class="catalog-filter catalog-filter_sidebar" action="https://echo.htmlacademy.ru/" method="GET">
+          <b class="catalog-filter__heading">Фильтр</b>
+          <fieldset class="catalog-filter__prop catalog-filter__prop_price">
+            <legend class="catalog-filter__prop-name">Стоимость</legend>
+            <div class="range-slider">
+              <label class="range-slider__label" for="catalog-filter__prop-control_bottom-price"></label>
+              <input class="range-slider__range-input" id="catalog-filter__prop-control_bottom-price" max="1000000" min="0" type="range" value="100000">
 
-              <label class="price-label" for="top-price"></label>
-              <input id='top-price' type="range" min="0" value="500000" max="1000000"/>
+              <label class="range-slider__label" for="catalog-filter__prop-control_top-price"></label>
+              <input class="range-slider__range-input" id='catalog-filter__prop-control_top-price' max="1000000" min="0" type="range" value="500000">
             </div>
-          </div>
-          <div class="catalog-sidebar-filter__filter-prop">
-            <hr/>
-            <h5>Цвет</h5>
-            <label>
-              <input type="checkbox" checked/>
-              <b>Черный</b>
+          </fieldset>
+          <fieldset class="catalog-filter__prop catalog-filter__prop_color">
+            <legend class="catalog-filter__prop-name">Цвет</legend>
+            <label class="checkbox">
+              <input class="checkbox__input" name="colors[]" type="checkbox" value="black" checked>
+              <b class="checkbox__label-text">Черный</b>
             </label>
-            <label>
-              <input type="checkbox" checked/>
-              <b>Белый</b>
+            <label class="checkbox">
+              <input class="checkbox__input" name="colors[]" type="checkbox" value="white" checked>
+              <b class="checkbox__label-text">Белый</b>
             </label>
-            <label>
-              <input type="checkbox"/>
-              <b>Синий</b>
+            <label class="checkbox">
+              <input class="checkbox__input" name="colors[]" type="checkbox" value="blue">
+              <b class="checkbox__label-text">Синий</b>
             </label>
-            <label>
-              <input type="checkbox"/>
-              <b>Розовый</b>
+            <label class="checkbox">
+              <input class="checkbox__input" name="colors[]" type="checkbox" value="pink">
+              <b class="checkbox__label-text">Розовый</b>
             </label>
-            <label>
-              <input type="checkbox"/>
-              <b>Красный</b>
+            <label class="checkbox">
+              <input class="checkbox__input" name="colors[]" type="checkbox" value="red">
+              <b class="checkbox__label-text">Красный</b>
             </label>
-          </div>
-          <div class="catalog-sidebar-filter__filter-prop">
-            <hr/>
-            <h5>Bluetooth</h5>
-            <label>
-              <input name="bluetooh" type="radio" checked/>
-              <span>Есть</span>
+          </fieldset>
+          <fieldset class="catalog-filter__prop catalog-filter__prop_bluetooth">
+            <legend class="catalog-filter__prop-name">Bluetooth</legend>
+            <label class="radio-btn">
+              <input class="radio-btn__input" checked name="bluetooh" type="radio">
+              <span class="radio-btn__label-text">Есть</span>
             </label>
-            <label>
-              <input name="bluetooh" type="radio"/>
-              <span>Нет</span>
+            <label class="radio-btn">
+              <input class="radio-btn__input" name="bluetooh" type="radio">
+              <span class="radio-btn__label-text">Нет</span>
             </label>
-          </div>
-          <button type="submit" class="line-btn">Показать</button>
+          </fieldset>
+          <button class="line-btn catalog-filter__submit-btn" type="submit">Показать</button>
         </form>
 
         <div class="catalog-list-wrapper">
