@@ -138,64 +138,73 @@
             </label>
           </fieldset>
           <button class="line-btn catalog-filter__submit-btn" type="submit">Показать</button>
-        </form>
-
-        <div class="catalog-list-wrapper">
-          <div class="catalog-sort-panel">
-            <label>
-              <b>Сортировка</b>
-
-              <select class="catalog-sort-proprety">
-                <option>Популярные</option>
-                <option>Рейтинг</option>
-                <option>Стоимость</option>
+          <fieldset class="catalog-filter__sort">
+            <legend class="catalog-filter__heading">Сортировка</legend>
+            <label class="transparent-select__catalog-sort_prop">
+              <select class="transparent-select" name="sortBy">
+                <option class="transparent-select__option" selected>Популярные</option>
+                <option class="transparent-select__option">Рейтинг</option>
+                <option class="transparent-select__option">Стоимость</option>
               </select>
             </label>
-            <div>
-              <button>
-                <object type="image/svg+xml" data="images/icons/arrow2-up.svg"></object>
-              </button>
-              <button>
-                <object type="image/svg+xml" data="images/icons/arrow2-down.svg"></object>
-              </button>
+            <div class=order-btn-group>
+              <label class="order-btn-group__item">
+                <input class="order-btn-group__asc" name="order" value="asc" type='radio' checked>
+              </label>
+              <label class="order-btn-group__item">
+                <input class="order-btn-group__desc" name="order" value="desc" type='radio'>
+              </label>
             </div>
-          </div>
-          <div class="catalog-listing">
-            <ul class="catalog-list">
-              <li class="catalog-list__item">
-                <img class="catalog-list__item-image" src="images/content/product-1.png" alt="Любительская селфи-палка"/>
-                <p class="catalog-list__item-name">Любительская селфи-палка</p>
-                <b class="catalog-list__item-price">500</b>
-              </li>
-              <li class="catalog-list__item">
-                <img class="catalog-list__item-image" src="images/content/product-2.png" alt="Профессиональная селфи-палка"/>
-                <p class="catalog-list__item-name">Профессиональная селфи-палка</p>
-                <b class="catalog-list__item-price">1 500</b>
-              </li>
-              <li class="catalog-list__item">
-                <img class="catalog-list__item-image" src="images/content/product-3.png" alt="Непотопляемая селфи-палка"/>
-                <p class="catalog-list__item-name">Непотопляемая селфи-палка</p>
-                <b class="catalog-list__item-price">2 500</b>
-              </li>
-              <li class="catalog-list__item">
-                <img class="catalog-list__item-image" src="images/content/product-4.png" alt="Селфи-палка «Следуй за мной»"/>
-                <p class="catalog-list__item-name">Селфи-палка «Следуй за мной»</p>
-                <b class="catalog-list__item-price">1 500</b>
-              </li>
-            </ul>
-            <button class="fullwidth-button">Загрузить еще</button>
-            <div class="fullwidth-pagination">
-              <a href="#page-prev">Назад</a>
-              <div class="pages">
-                <a href="#page-1">1</a>
-                <a href="#page-2">2</a>
-                <a href="#page-3">3</a>
-                <a href="#more-pages">...</a>
-                <a href="#last-page">15</a>
-              </div>
-              <a href="#page-next">Вперед</a>
-            </div>
-          </div>
+          </fieldset>
+        </form>
+
+        <div class="catalog-listing">
+          <ul class="catalog-listing__view">
+            <li class="catalog-list__item">
+              <img class="catalog-list__item-image" src="images/content/product-1.png" alt="Любительская селфи-палка">
+              <p class="catalog-list__item-name">Любительская селфи-палка</p>
+              <b class="catalog-list__item-price">500</b>
+            </li>
+            <li class="catalog-list__item">
+              <img class="catalog-list__item-image" src="images/content/product-2.png" alt="Профессиональная селфи-палка">
+              <p class="catalog-list__item-name">Профессиональная селфи-палка</p>
+              <b class="catalog-list__item-price">1 500</b>
+            </li>
+            <li class="catalog-list__item">
+              <img class="catalog-list__item-image" src="images/content/product-3.png" alt="Непотопляемая селфи-палка">
+              <p class="catalog-list__item-name">Непотопляемая селфи-палка</p>
+              <b class="catalog-list__item-price">2 500</b>
+            </li>
+            <li class="catalog-list__item">
+              <img class="catalog-list__item-image" src="images/content/product-4.png" alt="Селфи-палка «Следуй за мной»">
+              <p class="catalog-list__item-name">Селфи-палка «Следуй за мной»</p>
+              <b class="catalog-list__item-price">1 500</b>
+            </li>
+          </ul>
+          <button class="outline-btn show-more-btn">Загрузить еще</button>
+          <ul class="pagination-list">
+            <li class="pagination-list__item">
+              <a class="pagination-list__link_prev" href="#">Назад</a>
+            </li>
+            <li class="pagination-list__item">
+              <a class="pagination-list__link" href="#">1</a>
+            </li>
+            <li class="pagination-list__item">
+              <a class="pagination-list__link" href="#">2</a>
+            </li>
+            <li class="pagination-list__item">
+              <a class="pagination-list__link" href="#">3</a>
+            </li>
+            <li class="pagination-list__item">
+              <a class="pagination-list__link" href="#">...</a>
+            </li>
+            <li class="pagination-list__item">
+              <a class="pagination-list__link" href="#">15</a>
+            </li>
+            <li class="pagination-list__item">
+              <a class="pagination-list__link_next" href="#">Вперед</a>
+            </li>
+          </ul>
         </div>
       </div>
     </main>
