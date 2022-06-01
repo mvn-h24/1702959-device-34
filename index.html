@@ -9,25 +9,28 @@
   <body>
     <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
     <header class="doc-header">
-      <a class="doc-logo doc-header__doc-logo"></a>
-
-      <div class="control-panel">
-        <form class="search-string" method="GET" action="https://echo.htmlacademy.ru/">
-          <label class="search-string__input-wrapper" for="search-input">
-            <input class="search-string__input" name="query" id="search-input" type="search" placeholder="Текст поиска"/>
-          </label>
-          <button class="search-string__submit" type="submit">Найти</button>
-        </form>
-        <a class="string-btn login-btn" href="#">Войти</a>
-        <a class="string-btn compare-btn" href="#">Сравнить</a>
-        <a class="string-btn cart-btn" href="#">
-          <span class="cart-btn__counter">2</span>
-          Корзина
-        </a>
-      </div>
-
       <nav class="nav-panel">
-        <h2 class="visually-hidden">Доступное</h2>
+        <h2 class="visually-hidden">Навигация</h2>
+
+        <a class="doc-logo doc-header__doc-logo">
+          <span class="visually-hidden">Главная</span>
+        </a>
+
+        <div class="control-panel">
+          <form class="search-string" method="GET" action="https://echo.htmlacademy.ru/">
+            <label class="search-string__input-wrapper" for="search-input">
+              <input class="search-string__input" id="search-input" name="query" placeholder="Текст поиска" type="search">
+            </label>
+            <button class="search-string__submit" type="submit">Найти</button>
+          </form>
+          <a class="string-btn login-btn" href="#">Войти</a>
+          <a class="string-btn compare-btn" href="#">Сравнить</a>
+          <a class="string-btn cart-btn" href="#">
+            <span class="cart-btn__counter">2</span>
+            Корзина
+          </a>
+        </div>
+
         <menu class="nav-list">
           <li class="nav-list__item">
             <a class="nav-list__link" href="#">Каталог товаров</a>
@@ -43,7 +46,7 @@
           </li>
         </menu>
         <button class="btn-toggle-hidden">
-          <span class="visually-hidden">Показать категории каталога</span>
+          <span class="visually-hidden">Показать разделы каталога</span>
         </button>
         <menu class="nav-list-catalog">
           <li class="nav-list-catalog__item">
@@ -288,7 +291,9 @@
     </main>
 
     <footer class="doc-footer">
-      <a class="doc-logo header__doc-logo"></a>
+      <a class="doc-logo header__doc-logo">
+        <span class="visually-hidden">Главная</span>
+      </a>
       <address class="address-location">
         <a class="address-location__implicit-anchor" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
       </address>
