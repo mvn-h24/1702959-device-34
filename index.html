@@ -76,11 +76,17 @@
         <h2 class="visually-hidden">Промо-каталог</h2>
         <div class="catalog-slider">
           <div class="catalog-slider__slideshow-column">
-            <div class="catalog-slider__slideshow-layout">
-              <img class="catalog-slider__slide" src="images/content/slider-1.png" alt="Квадрокоптер">
-              <img class="catalog-slider__slide hidden" src="images/content/slider-2.png" alt="Фитнес трекер">
-              <img class="catalog-slider__slide hidden" src="images/content/slider-3.png" alt="Монопод">
-            </div>
+            <ul class="catalog-slider__slideshow-layout">
+              <li class="catalog-slider__slide">
+                <img class="catalog-slider__slide-img" src="images/content/slider-1.png" alt="Квадрокоптер">
+              </li>
+              <li class="catalog-slider__slide">
+                <img class="catalog-slider__slide-img hidden" src="images/content/slider-2.png" alt="Фитнес трекер">
+              </li>
+              <li class="catalog-slider__slide">
+                <img class="catalog-slider__slide-img hidden" src="images/content/slider-3.png" alt="Монопод">
+              </li>
+            </ul>
             <div class="catalog-slider__slideshow-control">
               <button class="catalog-slider__next-slide">
                 <span class="visually-hidden">Следующий товар</span>
@@ -91,77 +97,83 @@
             </div>
           </div>
           <div class="catalog-slider__content-column">
-            <div class="catalog-slider__counter">
-              <span class="catalog-slider_number">01</span>
-              <span class="catalog-slider_number hidden">02</span>
-              <span class="catalog-slider_number hidden">03</span>
-            </div>
-            <div class="catalog-slider__content-slides">
-              <div class="catalog-slider__seo-info">
-                <strong class="catalog-slider__seo-title">Порхает как бабочка, жалит как пчела!</strong>
+            <ul class="catalog-slider__counter">
+              <li class="catalog-slider_number">01</li>
+              <li class="catalog-slider_number hidden">02</li>
+              <li class="catalog-slider_number hidden">03</li>
+            </ul>
+            <ul class="catalog-slider__content-slides">
+              <li class="catalog-slider__seo-info">
+                <em class="catalog-slider__seo-title">Порхает как бабочка, жалит как пчела!</em>
                 <p class="catalog-slider__seo-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              </div>
-              <div class="catalog-slider__seo-info hidden">
-                <strong class="catalog-slider__seo-title">Худеем правильно!</strong>
+              </li>
+              <li class="catalog-slider__seo-info hidden">
+                <em class="catalog-slider__seo-title">Худеем правильно!</em>
                 <p class="catalog-slider__seo-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              </div>
-              <div class="catalog-slider__seo-info hidden">
-                <strong class="catalog-slider__seo-title">Делай селфи, как Бен Стиллер!</strong>
+              </li>
+              <li class="catalog-slider__seo-info hidden">
+                <em class="catalog-slider__seo-title">Делай селфи, как Бен Стиллер!</em>
                 <p class="catalog-slider__seo-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-              </div>
-            </div>
+              </li>
+            </ul>
             <div class="catalog-slider__state-info">
               <a class="line-btn anchor-btn" href="catalog.html/#product-page">Подробнее</a>
-              <div class="catalog-slider__pagination-list pagination-list">
-                <label class="pagination-list__point">
-                  <span class="visually-hidden">Слайд 1
-                    <input class="progress-list__pagination-input" type="radio"/>
-                  </span>
-                </label>
-                <label class="progress-list__pagination-point">
-                  <span class="visually-hidden">Слайд 2
-                    <input class="progress-list__pagination-input" type="radio">
-                  </span>
-                </label>
-                <label class="progress-list__pagination-point">
-                  <span class="visually-hidden">Слайд 3
-                    <input class="progress-list__pagination-input" type="radio">
-                  </span>
-                </label>
-              </div>
+              <ul class="catalog-slider__pagination-list pagination-list">
+                <li class="pagination-list__item-point">
+                  <button class="pagination-list__point">
+                    <span class="visually-hidden">Слайд 1</span>
+                  </button>
+                </li>
+                <li class="pagination-list__item-point">
+                  <button class="pagination-list__point">
+                    <span class="visually-hidden">Слайд 2</span>
+                  </button>
+                </li>
+                <li class="pagination-list__item-point">
+                  <button class="pagination-list__point">
+                    <span class="visually-hidden">Слайд 3</span>
+                  </button>
+                </li>
+              </ul>
             </div>
-            <div class="catalog-slider__additions">
-              <dl class="features-list">
-                <div class="features-list__item">
-                  <dt class="features-list__item-title">Дальность полета</dt>
-                  <dd class="features-list__item-value">800 м</dd>
-                </div>
-                <div class="features-list__item">
-                  <dt class="features-list__item-title">Фокусное расстояние</dt>
-                  <dd class="features-list__item-value">50 м</dd>
-                </div>
-              </dl>
-              <dl class="features-list hidden">
-                <div class="features-list__item">
-                  <dt class="features-list__item-title">Без подзарядки</dt>
-                  <dd class="features-list__item-value">48 часов</dd>
-                </div>
-              </dl>
-              <dl class="features-list hidden">
-                <div class="features-list__item">
-                  <dt class="features-list__item-title">Длина палки</dt>
-                  <dd class="features-list__item-value">8,5 м</dd>
-                </div>
-                <div class="features-list__item">
-                  <dt class="features-list__item-title">Вес палки</dt>
-                  <dd class="features-list__item-value">5 кг</dd>
-                </div>
-                <div class="features-list__item">
-                  <dt class="features-list__item-title">Материал</dt>
-                  <dd class="features-list__item-value">Карбон</dd>
-                </div>
-              </dl>
-            </div>
+            <ul class="catalog-slider__additions">
+              <li class="catalog-slider__slide-addition">
+                <dl class="features-list">
+                  <div class="features-list__item">
+                    <dt class="features-list__item-title">Дальность полета</dt>
+                    <dd class="features-list__item-value">800 м</dd>
+                  </div>
+                  <div class="features-list__item">
+                    <dt class="features-list__item-title">Фокусное расстояние</dt>
+                    <dd class="features-list__item-value">50 м</dd>
+                  </div>
+                </dl>
+              </li>
+              <li class="catalog-slider__slide-addition">
+                <dl class="features-list hidden">
+                  <div class="features-list__item">
+                    <dt class="features-list__item-title">Без подзарядки</dt>
+                    <dd class="features-list__item-value">48 часов</dd>
+                  </div>
+                </dl>
+              </li>
+              <li class="catalog-slider__slide-addition">
+                <dl class="features-list hidden">
+                  <div class="features-list__item">
+                    <dt class="features-list__item-title">Длина палки</dt>
+                    <dd class="features-list__item-value">8,5 м</dd>
+                  </div>
+                  <div class="features-list__item">
+                    <dt class="features-list__item-title">Вес палки</dt>
+                    <dd class="features-list__item-value">5 кг</dd>
+                  </div>
+                  <div class="features-list__item">
+                    <dt class="features-list__item-title">Материал</dt>
+                    <dd class="features-list__item-value">Карбон</dd>
+                  </div>
+                </dl>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -188,42 +200,37 @@
       </section>
 
       <section class="tabs-list doc-services">
-        <div class="tabs-list__switcher">
-          <label class="line-btn tabs-list__switch tabs-list__switch_current">
-            Доставка
-            <input class=visually-hidden type="radio" name="tabs-list"/>
-          </label>
-          <label class="line-btn tabs-list__switch">
-            Гарантия
-            <input class=visually-hidden type="radio" name="tabs-list"/>
-          </label>
-          <label class="line-btn tabs-list__switch">
-            Кредит
-            <input class=visually-hidden type="radio" name="tabs-list"/>
-          </label>
-        </div>
-        <div class="tabs-list__tab-layout">
-          <div class="service-summary service-summary__delivery">
+        <ul class="tabs-list__switcher">
+          <li>
+            <button class="line-btn tabs-list__switch tabs-list__switch_current">Доставка</button>
+          </li>
+          <li>
+            <button class="line-btn tabs-list__switch">Гарантия</button>
+          </li>
+          <li>
+            <button class="line-btn tabs-list__switch">Кредит</button>
+          </li>
+        </ul>
+        <ul class="tabs-list__tab-layout">
+          <li class="service-summary service-summary__delivery">
             <h2 class="service-summary__title">Доставка</h2>
             <p class="service-summary__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </div>
-          <div class="service-summary service-summary__garanty">
+          </li>
+          <li class="service-summary service-summary__garanty">
             <h2 class="service-summary__title">Гарантия</h2>
             <p class="service-summary__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          </div>
-          <div class="service-summary service-summary__credit">
+          </li>
+          <li class="service-summary service-summary__credit">
             <h2 class="service-summary__title">Кредит</h2>
             <p class="service-summary__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
 
-      <section class="columns-layout columns-layout_two-columns doc-about-us">
-        <div class="notify notify__info-message columns-layout__notify">
-          <p class="notify__message">Доставим редкий товар под заказ</p>
-        </div>
+      <div class="columns-layout columns-layout_two-columns doc-about-us">
+        <p class="notify notify__info-message">Доставим редкий товар под заказ</p>
 
-        <div class="columns-layout__col">
+        <section class="columns-layout__col">
           <h2 class="columns-layout__col-heading">О нас</h2>
           <div class="columns-layout__col-content">
             <p class="columns-layout__par">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -235,23 +242,21 @@
             </ul>
             <a class="line-btn" href="#">подробнее о нас</a>
           </div>
-        </div>
+        </section>
 
         <div class="columns-layout__col">
-          <h2 class="columns-layout__col-heading">Контакты</h2>
-          <div class="columns-layout__col-content">
-            <p class="columns-layout__par">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
-            <p class="columns-layout__par">Интернет-магазин «Девайс»</p>
-            <address class="contacts-list">
-              <ul class="implicit-list">
-                <li class="implicit-list__item">
-                  <a class="address-location__implicit-anchor" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
-                </li>
-                <li class="implicit-list__item">
-                  <a class="anchor-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-                </li>
-              </ul>
-            </address>
+          <section class="columns-layout__col-row">
+            <h2 class="columns-layout__col-heading">Контакты</h2>
+            <div class="columns-layout__col-content">
+              <p class="columns-layout__par">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+              <p class="columns-layout__par">Интернет-магазин «Девайс»</p>
+              <address class="contacts-list">
+                <a class="address-location__implicit-anchor" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
+                <a class="anchor-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+              </address>
+            </div>
+          </section>
+          <section class="columns-layout__col-row">
             <h2 class="columns-layout__col-subheading">Время работы</h2>
             <ul class="implicit-list">
               <li class="implicit-list__item">
@@ -268,9 +273,9 @@
               </li>
             </ul>
             <a class="line-btn" href="#">напишите нам</a>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
 
       <form class="subscribe-form doc-subscribe" method="POST" action="https://echo.htmlacademy.ru/">
         <h3 class="subscribe-form__title">Подпишитесь на рассылку</h3>
@@ -328,7 +333,9 @@
       <address class="address-contact">
         <a class="anchor-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </address>
-      <a class="doc-vendor__logo" href="https://htmlacademy.ru/"></a>
+      <a class="doc-vendor__logo" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">Создано с участием htmlacademy</span>
+      </a>
     </footer>
   </body>
 </html>
