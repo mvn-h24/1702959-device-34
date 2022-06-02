@@ -73,7 +73,7 @@
     </header>
 
     <main class="doc-main">
-      <div class="breadcrumbs">
+      <header class="breadcrumbs">
         <h2 class="breadcrumbs__title">Моноподы для селфи</h2>
 
         <ul class="breadcrumbs__list">
@@ -87,9 +87,10 @@
             <a class="breadcrumbs__anchor">Моноподы для селфи</a>
           </li>
         </ul>
-      </div>
+      </header>
 
-      <div class="catalog">
+      <section class="catalog">
+        <h2 class="visually-hidden">Список товаров с фильтрами и пагинацией</h2>
         <form class="catalog-filter catalog-filter_sidebar" action="https://echo.htmlacademy.ru/" method="GET">
           <fieldset>
             <legend class="catalog-filter__heading">Фильтр</legend>
@@ -105,37 +106,55 @@
             </div>
             <div class="catalog-filter__prop catalog-filter__prop_color">
               <b class="catalog-filter__prop-name">Цвет</b>
-              <label class="checkbox">
-                <input class="checkbox__input" name="colors[]" type="checkbox" value="black" checked>
-                <span class="checkbox__label-text">Черный</span>
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input" name="colors[]" type="checkbox" value="white" checked>
-                <span class="checkbox__label-text">Белый</span>
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input" name="colors[]" type="checkbox" value="blue">
-                <span class="checkbox__label-text">Синий</span>
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input" name="colors[]" type="checkbox" value="pink">
-                <span class="checkbox__label-text">Розовый</span>
-              </label>
-              <label class="checkbox">
-                <input class="checkbox__input" name="colors[]" type="checkbox" value="red">
-                <span class="checkbox__label-text">Красный</span>
-              </label>
+              <ul class="catalog-filter__prop-values-list">
+                <li class="prop-values-list__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="colors[]" type="checkbox" value="black" checked>
+                    <span class="checkbox__label-text">Черный</span>
+                  </label>
+                </li>
+                <li class="prop-values-list__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="colors[]" type="checkbox" value="white" checked>
+                    <span class="checkbox__label-text">Белый</span>
+                  </label>
+                </li>
+                <li class="prop-values-list__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="colors[]" type="checkbox" value="blue">
+                    <span class="checkbox__label-text">Синий</span>
+                  </label>
+                </li>
+                <li class="prop-values-list__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="colors[]" type="checkbox" value="pink">
+                    <span class="checkbox__label-text">Розовый</span>
+                  </label>
+                </li>
+                <li class="prop-values-list__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="colors[]" type="checkbox" value="red">
+                    <span class="checkbox__label-text">Красный</span>
+                  </label>
+                </li>
+              </ul>
             </div>
             <div class="catalog-filter__prop catalog-filter__prop_bluetooth">
               <b class="catalog-filter__prop-name">Bluetooth</b>
-              <label class="radio-btn">
-                <input class="radio-btn__input" checked name="bluetooh" type="radio">
-                <span class="radio-btn__label-text">Есть</span>
-              </label>
-              <label class="radio-btn">
-                <input class="radio-btn__input" name="bluetooh" type="radio">
-                <span class="radio-btn__label-text">Нет</span>
-              </label>
+              <ul class="catalog-filter__prop-values-list">
+                <li class="prop-values-list__item">
+                  <label class="radio-btn">
+                    <input class="radio-btn__input" checked name="bluetooh" type="radio">
+                    <span class="radio-btn__label-text">Есть</span>
+                  </label>
+                </li>
+                <li class="prop-values-list__item">
+                  <label class="radio-btn">
+                    <input class="radio-btn__input" name="bluetooh" type="radio">
+                    <span class="radio-btn__label-text">Нет</span>
+                  </label>
+                </li>
+              </ul>
             </div>
           </fieldset>
           <button class="line-btn catalog-filter__submit-btn" type="submit">Показать</button>
@@ -215,7 +234,7 @@
             </li>
           </ol>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer class="doc-footer">
