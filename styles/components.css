@@ -55,7 +55,7 @@
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: inherit;
+  color: var(--color-main);
   position: relative;
   align-items: center;
   display: inline-flex;
@@ -76,6 +76,43 @@
   height: 100%;
 }
 
+a.line-btn {
+  text-decoration: none;
+}
+
+.mark-list__item {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 20px;
+}
+
+.mark-list {
+  list-style: none;
+  padding: 0;
+}
+
+.mark-list li:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--bg-accent);
+  margin-right: 26px;
+}
+
+.address-location__implicit-anchor {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.anchor-link {
+  font-style: normal;
+}
+
+.implicit-list {
+  padding: 0;
+  list-style: none;
+}
 
 .btn-toggle-hidden::before {
   content: "";
@@ -312,7 +349,7 @@
   margin-bottom: 32px;
 }
 
-/*services section*
+/*services section*/
 /*services tab-list*/
 .tabs-list:before {
   content: "";
@@ -373,4 +410,38 @@
   z-index: -1;
   top: 0;
   display: inline-block;
+}
+
+/*about-us section*/
+.columns-layout__col {
+  color: var(--color-secondary);
+}
+
+.columns-layout__col:before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 7px;
+  background-color: var(--color-main);
+}
+
+.columns-layout__col-heading,
+.columns-layout__col .mark-list__item {
+  color: var(--color-main);
+}
+
+.columns-layout__col address a {
+  color: inherit;
+}
+
+.columns-layout__col-heading {
+  font-size: 50px;
+  line-height: 50px;
+  font-family: var(--font-heading);
+  font-weight: 800;
+}
+
+.columns-layout__col-subheading {
+  font-size: 24px;
+  font-weight: 700;
 }
