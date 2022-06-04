@@ -35,3 +35,15 @@ body {
   font-size: 18px;
   line-height: 30px;
 }
+
+.catalog {
+  background-color: var(--bg-main-secondary);
+}
+
+.catalog-listing__wrapper {
+  background-color: var(--bg-main);
+}
+
+.catalog-listing {
+  list-style: none;
+}
