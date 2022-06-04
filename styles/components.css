@@ -86,9 +86,43 @@
   height: 16px;
 }
 
-.notify {
 
+.notify {
+  --message-icon: "#";
+  background-color: var(--bg-main-secondary);
 }
+
+.notify:before {
+  content: "";
+  display: block;
+  width: 125px;
+  height: 100px;
+  background-color: var(--bg-accent);
+  background-image: var(--message-icon);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.notify__info-message {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.notify__info-message:after {
+  content: "";
+  background-image: url("../images/icons/info.svg");
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(220, 220, 220, 0.5);;
+}
+
 
 /*header*/
 /*search-string*/
