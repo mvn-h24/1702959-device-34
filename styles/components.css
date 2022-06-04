@@ -660,3 +660,21 @@ button.line-btn {
 .order-btn-group__item-desc {
   background-image: url("../images/icons/arrow2-down.svg");
 }
+
+.catalog-list__item-name {
+  font-weight: 700;
+  letter-spacing: -0.2em;
+  line-height: 20px;
+}
+
+.catalog-list__item-price {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.catalog-list__item-price:after {
+  content: '\20BD';
+}
