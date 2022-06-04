@@ -1,8 +1,11 @@
 :root {
+  --bg-accent-secondary: #444444;
   --bg-accent: #FFE17F;
+  --bg-accent-bright: #FFC700;
   --bg-main-secondary: #F0F0F0;
   --bg-main: #FFFFFF;
   --color-main: #000000;
+  --color-accent: #FFFFFF;
   --color-secondary: #444444;
   --font-default: "Rubik", sans-serif;
   --font-heading: "Raleway", sans-serif;

@@ -51,10 +51,13 @@
 .address-location__implicit-anchor {
   text-decoration: none;
   font-style: normal;
+  color: inherit;
 }
 
 .anchor-link {
   font-style: normal;
+  color: inherit;
+  font-weight: normal;
 }
 
 .btn-toggle-hidden::before {
@@ -125,6 +128,7 @@ a.line-btn {
 
 .features-list {
   padding: 0;
+  margin: 0;
 }
 
 .features-list__item {
@@ -511,4 +515,58 @@ a.line-btn {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+/*footer*/
+.doc-footer {
+  background-color: var(--bg-accent-secondary);
+  color: var(--color-accent);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.doc-footer:after {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 7px;
+  background-color: var(--bg-accent-bright);
+}
+
+.inner-section-menu {
+  padding: 0;
+  list-style: none;
+}
+
+.inner-section-menu__anchor {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+}
+
+.social-menu {
+  list-style: none;
+}
+
+.social-icon {
+  --bg: "#";
+  background-image: var(--bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.doc-vendor__logo {
+  width: 114.9px;
+  height: 32.9px;
+  background-image: url("../images/content/shop/htmlacademy.svg");
+  display: inline-block;
 }
