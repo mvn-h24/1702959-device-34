@@ -1,3 +1,14 @@
+:root {
+  --bg-accent: #FFE17F;
+  --bg-main-secondary: #F0F0F0;
+  --bg-main: #FFFFFF;
+  --color-main: #000000;
+  --color-secondary: #444444;
+  --font-default: "Rubik", sans-serif;
+  --font-heading: "Raleway", sans-serif;
+
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -16,7 +27,9 @@
 }
 
 body {
-  font-family: "Rubic", sans-serif;
+  margin: 0;
+  font-family: var(--font-default);
   font-size: 18px;
   line-height: 30px;
 }
+
