@@ -4,7 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс - Каталог - Моноподы для селфи</title>
-    <link href="favicon.svg" rel="icon">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="images/system/favicon.png" type="image/png">
+    <link rel="icon" href="/images/system/favicon.svg" type="image/svg+xml">
     <link href="styles/document.css" rel="stylesheet">
   </head>
 
@@ -21,8 +23,7 @@
         <div class="control-panel">
           <form class="search-string" method="GET" action="https://echo.htmlacademy.ru/">
             <label class="search-string__input-wrapper" for="search-input">
-              <input class="search-string__input" id="search-input" name="query" placeholder="Текст поиска"
-                type="search">
+              <input class="search-string__input" id="search-input" name="query" placeholder="Текст поиска" type="search">
             </label>
             <button class="search-string__submit" type="submit">Найти</button>
           </form>
@@ -101,12 +102,10 @@
               <b class="catalog-filter__prop-name">Стоимость</b>
               <div class="range-slider">
                 <label class="range-slider__label" for="catalog-filter__prop-control_bottom-price"></label>
-                <input class="range-slider__range-input" id="catalog-filter__prop-control_bottom-price" max="1000000"
-                  min="0" type="range" value="100000">
+                <input class="range-slider__range-input" id="catalog-filter__prop-control_bottom-price" max="1000000" min="0" type="range" value="100000">
 
                 <label class="range-slider__label" for="catalog-filter__prop-control_top-price"></label>
-                <input class="range-slider__range-input" id='catalog-filter__prop-control_top-price' max="1000000"
-                  min="0" type="range" value="500000">
+                <input class="range-slider__range-input" id='catalog-filter__prop-control_top-price' max="1000000" min="0" type="range" value="500000">
               </div>
             </div>
             <div class="catalog-filter__prop catalog-filter__prop_color">
@@ -188,36 +187,33 @@
             <li class="catalog-list__item">
               <figure class="catalog-list__item-review">
                 <img class="catalog-list__item-image" src="images/content/product-1.png" alt="Любительская селфи-палка">
-                <p class="catalog-list__item-name">Любительская селфи-палка</p>
+                <figcaption class="catalog-list__item-name">Любительская селфи-палка</figcaption>
               </figure>
-              <b class="catalog-list__item-price">500</b>
+              <span class="catalog-list__item-price">500</span>
               <a class="visually-hidden catalog-list__item-link">Перейти</a>
             </li>
             <li class="catalog-list__item">
               <figure class="catalog-list__item-review">
-                <img class="catalog-list__item-image" src="images/content/product-2.png"
-                  alt="Профессиональная селфи-палка">
+                <img class="catalog-list__item-image" src="images/content/product-2.png" alt="Профессиональная селфи-палка">
                 <figcaption class="catalog-list__item-name">Профессиональная селфи-палка</figcaption>
               </figure>
-              <b class="catalog-list__item-price">1 500</b>
+              <span class="catalog-list__item-price">1 500</span>
               <a class="visually-hidden catalog-list__item-link">Перейти</a>
             </li>
             <li class="catalog-list__item">
               <figure class="catalog-list__item-review">
-                <img class="catalog-list__item-image" src="images/content/product-3.png"
-                  alt="Непотопляемая селфи-палка">
+                <img class="catalog-list__item-image" src="images/content/product-3.png" alt="Непотопляемая селфи-палка">
                 <figcaption class="catalog-list__item-name">Непотопляемая селфи-палка</figcaption>
               </figure>
-              <b class="catalog-list__item-price">2 500</b>
+              <span class="catalog-list__item-price">2 500</span>
               <a class="visually-hidden catalog-list__item-link">Перейти</a>
             </li>
             <li class="catalog-list__item">
               <figure class="catalog-list__item-review">
-                <img class="catalog-list__item-image" src="images/content/product-4.png"
-                  alt="Селфи-палка «Следуй за мной»">
+                <img class="catalog-list__item-image" src="images/content/product-4.png" alt="Селфи-палка «Следуй за мной»">
                 <figcaption class="catalog-list__item-name">Селфи-палка «Следуй за мной»</figcaption>
               </figure>
-              <b class="catalog-list__item-price">1 500</b>
+              <span class="catalog-list__item-price">1 500</span>
               <a class="visually-hidden catalog-list__item-link">Перейти</a>
             </li>
           </ul>
@@ -254,8 +250,7 @@
         <span class="visually-hidden">Главная</span>
       </a>
       <address class="address-location">
-        <a class="address-location__implicit-anchor" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера
-          П.</a>
+        <a class="address-location__implicit-anchor" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
       </address>
       <ul class="article-section-menu">
         <li class="article-section-menu__item">
