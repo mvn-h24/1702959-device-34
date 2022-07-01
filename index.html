@@ -79,106 +79,90 @@
       <section class="doc-promo">
         <h2 class="visually-hidden">Промо-каталог</h2>
         <div class="catalog-slider">
-          <div class="catalog-slider__slideshow-column">
-            <ol class="catalog-slider__slideshow-layout">
-              <li class="catalog-slider__slide">
-                <img class="catalog-slider__slide-img" src="images/content/slider-1.png" alt="Квадрокоптер">
-              </li>
-              <li class="catalog-slider__slide hidden">
-                <img class="catalog-slider__slide-img " src="images/content/slider-2.png" alt="Фитнес трекер">
-              </li>
-              <li class="catalog-slider__slide hidden">
-                <img class="catalog-slider__slide-img" src="images/content/slider-3.png" alt="Монопод">
-              </li>
-            </ol>
-            <div class="catalog-slider__slideshow-control">
-              <button class="catalog-slider__next-slide">
-                <span class="visually-hidden">Следующий товар</span>
-              </button>
-              <button class="catalog-slider__prev-slide">
-                <span class="visually-hidden">Предыдущий товар</span>
-              </button>
-            </div>
+          <div class="catalog-slider__slideshow-control slideshow-control">
+            <button class="slideshow-control__next-slide">
+              <span class="visually-hidden">Следующий товар</span>
+            </button>
+            <button class="slideshow-control__prev-slide">
+              <span class="visually-hidden">Предыдущий товар</span>
+            </button>
           </div>
-          <div class="catalog-slider__content-column">
-            <ol class="catalog-slider__counter">
-              <li class="catalog-slider_number">01</li>
-              <li class="catalog-slider_number hidden">02</li>
-              <li class="catalog-slider_number hidden">03</li>
-            </ol>
-            <ol class="catalog-slider__content-slides">
-              <li class="catalog-slider__seo-info">
-                <em class="catalog-slider__seo-title">Порхает как бабочка, жалит как пчела!</em>
-                <p class="catalog-slider__seo-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              </li>
-              <li class="catalog-slider__seo-info hidden">
-                <em class="catalog-slider__seo-title">Худеем правильно!</em>
-                <p class="catalog-slider__seo-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              </li>
-              <li class="catalog-slider__seo-info hidden">
-                <em class="catalog-slider__seo-title">Делай селфи, как Бен Стиллер!</em>
-                <p class="catalog-slider__seo-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-              </li>
-            </ol>
-            <div class="catalog-slider__state-info">
-              <a class="line-btn anchor-btn" href="catalog.html/#product-page">Подробнее</a>
-              <ol class="catalog-slider__pagination-list pagination-list">
-                <li class="pagination-list__item-point">
-                  <button class="pagination-list__point">
-                    <span class="visually-hidden">Слайд 1</span>
-                  </button>
-                </li>
-                <li class="pagination-list__item-point">
-                  <button class="pagination-list__point">
-                    <span class="visually-hidden">Слайд 2</span>
-                  </button>
-                </li>
-                <li class="pagination-list__item-point">
-                  <button class="pagination-list__point">
-                    <span class="visually-hidden">Слайд 3</span>
-                  </button>
-                </li>
-              </ol>
-            </div>
-            <ol class="catalog-slider__additions">
-              <li class="catalog-slider__slide-addition">
-                <dl class="features-list">
-                  <div class="features-list__item">
-                    <dt class="features-list__item-title">Дальность полета</dt>
-                    <dd class="features-list__item-value">800 м</dd>
-                  </div>
-                  <div class="features-list__item">
-                    <dt class="features-list__item-title">Фокусное расстояние</dt>
-                    <dd class="features-list__item-value">50 м</dd>
-                  </div>
-                </dl>
-              </li>
-              <li class="catalog-slider__slide-addition  hidden">
-                <dl class="features-list">
-                  <div class="features-list__item">
-                    <dt class="features-list__item-title">Без подзарядки</dt>
-                    <dd class="features-list__item-value">48 часов</dd>
-                  </div>
-                </dl>
-              </li>
-              <li class="catalog-slider__slide-addition hidden">
-                <dl class="features-list">
-                  <div class="features-list__item">
-                    <dt class="features-list__item-title">Длина палки</dt>
-                    <dd class="features-list__item-value">8,5 м</dd>
-                  </div>
-                  <div class="features-list__item">
-                    <dt class="features-list__item-title">Вес палки</dt>
-                    <dd class="features-list__item-value">5 кг</dd>
-                  </div>
-                  <div class="features-list__item">
-                    <dt class="features-list__item-title">Материал</dt>
-                    <dd class="features-list__item-value">Карбон</dd>
-                  </div>
-                </dl>
-              </li>
-            </ol>
-          </div>
+          <ol class="catalog-slider__slideshow">
+            <li class="slideshow__slide">
+              <img class="slide__img" src="images/content/slider-1.png" alt="Квадрокоптер">
+              <span class=slide__counter">01</span>
+              <div class="slide__seo-info">
+                <em class="seo-info__title">Порхает как бабочка, жалит как пчела!</em>
+                <p class="seo-info__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              </div>
+              <a class="slide__link line-btn anchor-btn" href="catalog.html/#product-page">Подробнее</a>
+              <dl class="slide__features-list">
+                <div class="features-list__item">
+                  <dt class="features-list__item-title">Дальность полета</dt>
+                  <dd class="features-list__item-value">800 м</dd>
+                </div>
+                <div class="features-list__item">
+                  <dt class="features-list__item-title">Фокусное расстояние</dt>
+                  <dd class="features-list__item-value">50 м</dd>
+                </div>
+              </dl>
+            </li>
+            <li class="slideshow__slide hidden">
+              <img class="slide__img" src="images/content/slider-2.png" alt="Фитнес трекер">
+              <span class=slide__counter">02</span>
+              <div class="slide__seo-info">
+                <em class="seo-info__title">Худеем правильно!</em>
+                <p class="seo-info__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              </div>
+              <a class="slide__link line-btn anchor-btn" href="catalog.html/#product-page">Подробнее</a>
+              <dl class="slide__features-list">
+                <div class="features-list__item">
+                  <dt class="features-list__item-title">Без подзарядки</dt>
+                  <dd class="features-list__item-value">48 часов</dd>
+                </div>
+              </dl>
+            </li>
+            <li class="slideshow__slide hidden">
+              <img class="slide__img" src="images/content/slider-3.png" alt="Монопод">
+              <span class=slide__counter">03</span>
+              <div class="slide__seo-info">
+                <em class="seo-info__title">Делай селфи, как Бен Стиллер!</em>
+                <p class="seo-info__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              </div>
+              <a class="slide__link line-btn anchor-btn" href="catalog.html/#product-page">Подробнее</a>
+              <dl class="slide__features-list">
+                <div class="features-list__item">
+                  <dt class="features-list__item-title">Длина палки</dt>
+                  <dd class="features-list__item-value">8,5 м</dd>
+                </div>
+                <div class="features-list__item">
+                  <dt class="features-list__item-title">Вес палки</dt>
+                  <dd class="features-list__item-value">5 кг</dd>
+                </div>
+                <div class="features-list__item">
+                  <dt class="features-list__item-title">Материал</dt>
+                  <dd class="features-list__item-value">Карбон</dd>
+                </div>
+              </dl>
+            </li>
+          </ol>
+          <ol class="catalog-slider__pagination-list pagination-list">
+            <li class="pagination-list__item-point">
+              <button class="pagination-list__point">
+                <span class="visually-hidden">Слайд 1</span>
+              </button>
+            </li>
+            <li class="pagination-list__item-point">
+              <button class="pagination-list__point">
+                <span class="visually-hidden">Слайд 2</span>
+              </button>
+            </li>
+            <li class="pagination-list__item-point">
+              <button class="pagination-list__point">
+                <span class="visually-hidden">Слайд 3</span>
+              </button>
+            </li>
+          </ol>
         </div>
 
         <ul class="category-list">
