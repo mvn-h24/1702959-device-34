@@ -1,0 +1,7 @@
+.visually-hidden {
+  visibility: hidden;
+}
+
+.hidden {
+  display: none;
+}
