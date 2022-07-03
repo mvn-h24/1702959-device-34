@@ -142,19 +142,6 @@ button.line-btn {
   margin: 0;
 }
 
-.features-list__item {
-  color: var(--color-secondary);
-}
-
-.features-list__item:before {
-  content: "";
-  display: inline-block;
-  background-image: url("../images/icons/tick-big.svg");
-  width: 14px;
-  height: 14px;
-  margin-right: 16.5px;
-}
-
 /*notifications*/
 .notify {
   --message-icon: "#";
@@ -172,8 +159,9 @@ button.line-btn {
   background-position: center;
 }
 
-.notify__info-message {
+.notify {
   font-family: var(--font-heading);
+  font-weight: var(--font-weight_main_heading);
   font-size: 20px;
   line-height: 23px;
   text-align: center;
@@ -196,8 +184,8 @@ button.line-btn {
 /*header*/
 /*search-string*/
 .search-string {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: var(--font-size_ui);
+  line-height: var(--line-height_ui);
 }
 
 .search-string__input-wrapper:before {
@@ -223,48 +211,19 @@ button.line-btn {
   text-align: center;
 }
 
-/*nav*/
-.nav-panel {
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-panel:before {
-  content: "";
-  background-color: var(--bg-accent);
-  position: absolute;
-  top: 25px;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
 /*nav-lists*/
-.nav-list,
-.nav-list-catalog {
-  padding: 0;
-  margin: 0;
-}
-
-.nav-list {
-  font-family: var(--font-default);
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-.nav-list-catalog {
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.nav-list__link,
-.nav-list-catalog__link {
-  font-style: inherit;
-  font-weight: inherit;
+.nav-list__link {
   font-size: inherit;
-  line-height: inherit;
+  letter-spacing: 0.2em;
+  line-height: var(--line-height_main_uppercase);
+  text-transform: uppercase;
+  font-family: var(--font-heading);
+  font-weight: 800;
+}
+
+.nav-catalog__link {
+  font-size: var(--font-size_secondary);
+  line-height: var(--line-height_secondary);
   color: inherit;
   text-decoration: none;
 }
@@ -279,29 +238,6 @@ button.line-btn {
 
 .catalog-slider {
   position: relative;
-  display: flex;
-}
-
-.catalog-slider:before {
-  content: "";
-  position: absolute;
-  background-color: var(--bg-accent);
-  width: 100%;
-  height: 150px;
-  top: 0;
-  z-index: -1;
-}
-
-.catalog-slider__counter {
-  display: inline;
-  font-size: 180px;
-  font-weight: 700;
-  text-align: right;
-  color: #FFF;
-}
-
-.catalog-slider_number:not(.hidden) {
-  display: inline;
 }
 
 /*slider-control*/
@@ -318,29 +254,18 @@ button.line-btn {
   left: 0;
 }
 
-.catalog-slider__prev-slide {
-  background-image: url("../images/icons/left-tall-arrow.svg");
+.slideshow-control__next-slide::before {
+  content: url("../images/icons/left-tall-arrow.svg");
 }
 
-.catalog-slider__next-slide {
-  background-image: url("../images/icons/right-tall-arrow.svg");
+.slideshow-control__prev-slide::before {
+  content: url("../images/icons/right-tall-arrow.svg");
 }
 
-.catalog-slider__slideshow-column {
-  position: relative;
-}
-
-.catalog-slider__seo-title {
-  font-family: var(--font-heading);
-  font-style: normal;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-}
-
-.catalog-slider__seo-text {
-  font-weight: 400;
-  color: var(--color-secondary);
+.catalog-slider__pagination-list {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .pagination-list__point.current {
@@ -352,9 +277,33 @@ button.line-btn {
   background-color: var(--bg-main);
 }
 
+/*slider-slides*/
+.slide__counter {
+  display: inline;
+  font-size: 180px;
+  font-weight: 700;
+  text-align: right;
+  line-height: 30px;
+  color: #FFF;
+}
+
+.seo-info__title {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight_main_heading);
+  font-style: normal;
+  font-size: var(--font-size_main_heading);
+  line-height: var(--line-height_main_heading);
+}
+
+.seo-info__text {
+  color: var(--color-secondary);
+}
+
+
 .features-list__item-value {
   font-size: 36px;
   line-height: 30px;
+  color: var(--color-main)
 }
 
 .features-list__item-title {
@@ -398,23 +347,6 @@ button.line-btn {
 
 /*services section*/
 /*services tab-list*/
-.tabs-list:before {
-  content: "";
-  background-color: var(--bg-main-secondary);
-  width: 100%;
-  height: 100%;
-  top: 150px;
-  position: absolute;
-  z-index: -1;
-}
-
-.tabs-list {
-  overflow: hidden;
-  position: relative;
-
-  display: flex;
-}
-
 .tabs-list ol {
   list-style: none;
   padding: 0;
@@ -439,9 +371,9 @@ button.line-btn {
 
 .service-summary__title {
   font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
+  font-weight: var(--font-weight_main_heading);
+  font-size: var(--font-size_main_heading);
+  line-height: var(--line-height_main_heading);
 }
 
 .service-summary__text {
@@ -482,10 +414,10 @@ button.line-btn {
 }
 
 .columns-layout__col-heading {
-  font-size: 50px;
-  line-height: 50px;
+  font-weight: var(--font-weight_main_heading);
+  font-size: var(--font-size_main_heading);
+  line-height: var(--line-height_main_heading);
   font-family: var(--font-heading);
-  font-weight: 800;
 }
 
 .columns-layout__col-subheading {
@@ -493,15 +425,15 @@ button.line-btn {
   font-weight: 700;
 }
 
-/*subscribe-form*/
-.subscribe-form {
-  background-color: var(--bg-main-secondary);
+.work-hours__list {
+  font-style: normal;
 }
 
+/*subscribe-form*/
 .subscribe-form__title {
-  font-size: 50px;
-  line-height: 50px;
-  font-weight: 800;
+  font-size: var(--font-size_main_heading);
+  line-height: var(--line-height_main_heading);
+  font-weight: var(--font-weight_main_heading);
   font-family: var(--font-heading);
 }
 
@@ -526,6 +458,19 @@ button.line-btn {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.feature-item {
+  color: var(--color-secondary);
+  margin: 0;
+}
+
+.feature-item:before {
+  content: url("../images/icons/tick-big.svg");
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 16.5px;
 }
 
 /*footer*/
@@ -584,9 +529,10 @@ button.line-btn {
 
 
 /*breadcrumbs*/
-.breadcrumbs__title {
-  font-size: 50px;
-  line-height: 50px;
+.breadcrumbs__header {
+  font-size: var(--font-size_main_heading);
+  line-height: var(--line-height_main_heading);
+  font-weight: var(--font-weight_main_heading);
   font-style: var(--font-heading);
 }
 
@@ -612,6 +558,7 @@ button.line-btn {
 }
 
 /*catalog filter*/
+.catalog-sort__heading,
 .catalog-filter__heading {
   font-family: var(--font-heading);
   font-weight: 800;
@@ -624,6 +571,7 @@ button.line-btn {
 .catalog-filter__prop-name {
   font-size: 18px;
   line-height: 20px;
+  font-weight: 700;
   letter-spacing: -0.2em;
 }
 
@@ -677,6 +625,14 @@ button.line-btn {
 
 .catalog-list__item-price:after {
   content: '\20BD';
+}
+
+.transparent-select__option,
+.transparent-select {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 /*pagination*/
