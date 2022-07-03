@@ -15,6 +15,10 @@
   text-decoration: none;
 }
 
+.logout-btn {
+  opacity: 0.3;
+}
+
 .string-btn::before {
   display: inline-block;
 }
@@ -242,6 +246,9 @@ button.line-btn {
 
 .catalog-slider {
   position: relative;
+  background: linear-gradient(0, var(--bg-accent), var(--bg-accent)) no-repeat 0 0;
+  background-size: 100% 114px;
+
 }
 
 /*slider-control*/
@@ -289,6 +296,7 @@ button.line-btn {
   text-align: right;
   line-height: 30px;
   color: #FFF;
+  position: absolute;
 }
 
 .seo-info__title {
