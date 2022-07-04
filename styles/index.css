@@ -451,6 +451,18 @@ button.line-btn {
 }
 
 /*slider-slides*/
+.slideshow__slide:not(.hidden) {
+  display: flex;
+}
+
+.slide__img {
+  object-fit: contain;
+}
+
+.slide__img, .slide__info-column {
+  width: 50%;
+}
+
 .slide__counter {
   display: inline;
   font-size: 180px;
@@ -566,6 +578,10 @@ button.line-btn {
 }
 
 /*about-us section*/
+.doc__about-us {
+  background: var(--bg-main);
+}
+
 .columns-layout__col {
   color: var(--color-secondary);
 }
