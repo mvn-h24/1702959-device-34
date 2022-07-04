@@ -532,6 +532,12 @@ button.line-btn {
 }
 
 /*services section*/
+.doc-services {
+  width: var(--width__main-column);
+  margin: 0 auto;
+  display: flex;
+}
+
 /*services tab-list*/
 .tabs-list ol {
   list-style: none;
