@@ -558,12 +558,17 @@ button.line-btn {
 
 /*services section*/
 .doc-services {
+  background: linear-gradient(0, var(--bg-main), var(--bg-main)) no-repeat 0 0;
+  background-size: 100% 100px;
+}
+
+/*services tab-list*/
+.tabs-list {
   width: var(--width__main-column);
   margin: 0 auto;
   display: flex;
 }
 
-/*services tab-list*/
 .tabs-list ol {
   list-style: none;
   padding: 0;
