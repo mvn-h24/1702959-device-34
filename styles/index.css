@@ -696,16 +696,28 @@ button.line-btn {
   padding: 64px 0 56px;
 }
 
+.subscribe-form__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe-form__row:nth-child(1) {
+  margin-bottom: 140px;
+}
+
 .subscribe-form__title {
   font-size: var(--font-size_main_heading);
   line-height: var(--line-height_main_heading);
   font-weight: var(--font-weight_main_heading);
   font-family: var(--font-heading);
   margin: 0;
+  max-width: 346px;
 }
 
 .subscribe-form__par {
-  color: var(--color-secondary)
+  margin: 0;
+  color: var(--color-secondary);
+  max-width: 529px;
 }
 
 .subscribe-form__input,
