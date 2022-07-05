@@ -386,6 +386,10 @@ button.line-btn {
 
 /*notifications*/
 .notify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
   --message-icon: "#";
   background-color: var(--bg-main-secondary);
 }
@@ -614,8 +618,22 @@ button.line-btn {
 }
 
 /*about-us section*/
+.doc__about-us .notify {
+  margin-bottom: 70px;
+}
+
+.doc__about-us__wrapper {
+  width: var(--width__main-column);
+  margin: 0 auto;
+}
+
 .doc__about-us {
   background: var(--bg-main);
+  padding: 70px 0;
+}
+
+.columns-layout {
+  display: flex;
 }
 
 .columns-layout__col {
