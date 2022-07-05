@@ -704,6 +704,10 @@ button.line-btn {
   display: flex;
 }
 
+.columns-layout_two-columns .columns-layout__col {
+  width: 50%;
+}
+
 .columns-layout__col {
   color: var(--color-secondary);
 }
