@@ -52,6 +52,8 @@
 
   --font-size_secondary: 16px;
   --line-height_secondary: 18px;
+
+  --width__main-column: 1160px;
 }
 
 .visually-hidden {
@@ -103,9 +105,21 @@ main {
 .doc-header {
   background: linear-gradient(0, var(--bg-accent), var(--bg-accent)) no-repeat 0 40px;
   background-size: 100% 300px;
+  width: var(--width__main-column);
+  margin: 0 auto;
 }
 
 /*header*/
+.control-panel {
+  display: flex;
+}
+
+.doc-header__main-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px 0;
+}
+
 /*search-string*/
 .search-string {
   font-size: var(--font-size_ui);
@@ -136,6 +150,13 @@ main {
 }
 
 /*nav-lists*/
+.doc-nav__nav-list,
+.doc-nav_nav-catalog {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .nav-list__link {
   font-size: inherit;
   letter-spacing: 0.2em;
@@ -242,6 +263,10 @@ main {
   background-size: 100% 100%;
   width: 13px;
   height: 12px;
+}
+
+.compare-btn {
+  margin-left: auto;
 }
 
 .compare-btn::before {

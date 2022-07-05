@@ -13,63 +13,65 @@
     <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
     <header class="doc-header">
       <h2 class="visually-hidden">Промо-каталог</h2>
-      <a class="doc-logo doc-header__doc-logo">
-        <span class="visually-hidden">Главная</span>
-      </a>
-      <div class="control-panel">
-        <form class="search-string" method="GET" action="https://echo.htmlacademy.ru/">
-          <label class="search-string__input-wrapper" for="search-input">
-            <input class="search-string__input" id="search-input" name="query" placeholder="Текст поиска" type="search">
-          </label>
-          <button class="search-string__submit" type="submit">Найти</button>
-        </form>
-        <a class="string-btn login-btn" href="#">Войти</a>
-        <a class="string-btn compare-btn" href="#">Сравнить</a>
-        <a class="string-btn cart-btn" href="#">
-          <span class="cart-btn__counter">2</span>
-          Корзина
+      <div class="doc-header__main-wrapper">
+        <a class="doc-logo doc-header__doc-logo">
+          <span class="visually-hidden">Главная</span>
         </a>
+        <div class="control-panel">
+          <form class="search-string" method="GET" action="https://echo.htmlacademy.ru/">
+            <label class="search-string__input-wrapper" for="search-input">
+              <input class="search-string__input" id="search-input" name="query" placeholder="Текст поиска" type="search">
+            </label>
+            <button class="search-string__submit" type="submit">Найти</button>
+          </form>
+          <a class="string-btn login-btn" href="#">Войти</a>
+          <a class="string-btn compare-btn" href="#">Сравнить</a>
+          <a class="string-btn cart-btn" href="#">
+            <span class="cart-btn__counter">2</span>
+            Корзина
+          </a>
+        </div>
+        <nav class="doc-nav">
+          <h2 class="visually-hidden">Содержание</h2>
+          <ul class="doc-nav__nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Каталог товаров</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Доставка</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Гарантия</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <button class="btn-toggle-hidden">
+            <span class="visually-hidden">Показать ассортимент продукции</span>
+          </button>
+          <ul class="doc-nav_nav-catalog hidden">
+            <li class="nav-catalog__item">
+              <a class="nav-catalog__link" href="#">Виртуальная реальность</a>
+            </li>
+            <li class="nav-catalog__item">
+              <a class="nav-catalog__link" href="catalog.html">Моноподы для селфи</a>
+            </li>
+            <li class="nav-catalog__item">
+              <a class="nav-catalog__link" href="#">Экшн-камеры</a>
+            </li>
+            <li class="nav-catalog__item">
+              <a class="nav-catalog__link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="nav-catalog__item">
+              <a class="nav-catalog__link" href="#">Умные часы</a>
+            </li>
+            <li class="nav-catalog__item">
+              <a class="nav-catalog__link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="doc-nav">
-        <h2 class="visually-hidden">Содержание</h2>
-        <ul class="doc-nav__nav-list">
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Каталог товаров</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Доставка</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Гарантия</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <button class="btn-toggle-hidden">
-          <span class="visually-hidden">Показать ассортимент продукции</span>
-        </button>
-        <ul class="doc-nav_nav-catalog hidden">
-          <li class="nav-catalog__item">
-            <a class="nav-catalog__link" href="#">Виртуальная реальность</a>
-          </li>
-          <li class="nav-catalog__item">
-            <a class="nav-catalog__link" href="catalog.html">Моноподы для селфи</a>
-          </li>
-          <li class="nav-catalog__item">
-            <a class="nav-catalog__link" href="#">Экшн-камеры</a>
-          </li>
-          <li class="nav-catalog__item">
-            <a class="nav-catalog__link" href="#">Фитнес-браслеты</a>
-          </li>
-          <li class="nav-catalog__item">
-            <a class="nav-catalog__link" href="#">Умные часы</a>
-          </li>
-          <li class="nav-catalog__item">
-            <a class="nav-catalog__link" href="#">Квадрокоптеры</a>
-          </li>
-        </ul>
-      </nav>
       <div class="catalog-slider">
         <div class="catalog-slider__slideshow-control slideshow-control">
           <button class="slideshow-control__next-slide">
