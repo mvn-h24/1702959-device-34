@@ -525,6 +525,10 @@ button.line-btn {
   width: 50%;
 }
 
+.slide__info-column {
+  padding: 121px 0 38px;
+}
+
 .slide__counter {
   display: inline;
   font-size: 180px;
@@ -533,6 +537,8 @@ button.line-btn {
   line-height: 30px;
   color: #FFF;
   position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .seo-info__title {
@@ -545,8 +551,13 @@ button.line-btn {
 
 .seo-info__text {
   color: var(--color-secondary);
+  margin: 29px 0 51px;
 }
 
+.slide__features-list {
+  margin-top: 49px;
+  display: flex;
+}
 
 .features-list__item-value {
   font-size: 36px;
