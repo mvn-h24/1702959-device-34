@@ -112,6 +112,7 @@ main {
 /*header*/
 .control-panel {
   display: flex;
+  margin-bottom: 45px;
 }
 
 .doc-header__main-wrapper {
@@ -150,6 +151,26 @@ main {
 }
 
 /*nav-lists*/
+.doc-nav {
+  position: relative;
+}
+
+.doc-nav .btn-toggle-hidden {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 243px;
+}
+
+.doc-nav__nav-list {
+  display: flex;
+  gap: 45px;
+}
+
+.doc-nav__nav-list li:first-child {
+  margin-right: auto;
+}
+
 .doc-nav__nav-list,
 .doc-nav_nav-catalog {
   margin: 0;
@@ -472,7 +493,7 @@ button.line-btn {
   position: relative;
   background: linear-gradient(0, var(--bg-accent), var(--bg-accent)) no-repeat 0 0;
   background-size: 100% 114px;
-
+  z-index: 0;
 }
 
 /*slider-control*/
@@ -537,8 +558,9 @@ button.line-btn {
   line-height: 30px;
   color: #FFF;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 60px;
+  top: 93px;
+  z-index: -1;
 }
 
 .seo-info__title {
