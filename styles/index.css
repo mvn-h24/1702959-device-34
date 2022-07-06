@@ -905,6 +905,21 @@ button.line-btn {
   background-size: cover;
 }
 
+.catalog__wrapper {
+  width: var(--width__main-column);
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.catalog-col__wrapper {
+  width: 840px;
+}
+
+.catalog-filter {
+  width: 320px;
+}
+
 /*catalog filter*/
 .catalog-sort__heading,
 .catalog-filter__heading {
