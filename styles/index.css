@@ -74,12 +74,19 @@
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   color: var(--color-main);
   font-family: var(--font-default);
   font-size: var(--font-size_main);
   font-weight: var(--font-weight_main);
   line-height: var(--line-height_main);
+}
+
+main {
+  flex-grow: 1;
 }
 
 .catalog {
