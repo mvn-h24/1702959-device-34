@@ -85,10 +85,6 @@ body {
   line-height: var(--line-height_main);
 }
 
-main {
-  flex-grow: 1;
-}
-
 .catalog {
   background-color: var(--bg-main-secondary);
 }
@@ -103,6 +99,12 @@ main {
 
 main {
   background-color: var(--bg-main-secondary);
+  flex-grow: 1;
+  min-width: var(--width__main-column);
+}
+
+footer {
+  min-width: var(--width__main-column);
 }
 
 .doc__about-us {
