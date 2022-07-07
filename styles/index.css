@@ -715,7 +715,7 @@ button.line-btn {
 
 .tabs-list__item {
   width: 280px;
-  height: 40px;
+  min-height: 40px;
 }
 
 .tabs-list__item:not(:last-child) {
@@ -723,7 +723,7 @@ button.line-btn {
 }
 
 .tabs-list__tab-layout {
-  padding: 72.5px 63px 72.5px 116px;
+  padding: 72px 62px 72px 116px;
   flex-grow: 1;
 }
 
@@ -819,15 +819,16 @@ button.line-btn {
   width: var(--width__main-column);
   margin: 0 auto;
   padding: 64px 0 56px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .subscribe-form__row {
   display: flex;
   justify-content: space-between;
-}
-
-.subscribe-form__row:nth-child(1) {
-  margin-bottom: 140px;
 }
 
 .subscribe-form__title {
