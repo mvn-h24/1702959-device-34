@@ -97,13 +97,9 @@ body {
   list-style: none;
 }
 
-main {
+.doc-main {
   background-color: var(--bg-main-secondary);
   flex-grow: 1;
-  min-width: var(--width__main-column);
-}
-
-footer {
   min-width: var(--width__main-column);
 }
 
@@ -243,6 +239,7 @@ footer {
   font-size: 16px;
   line-height: 20px;
   padding: 60px 0;
+  min-width: var(--width__main-column);
 }
 
 .doc-footer__wrapper {
