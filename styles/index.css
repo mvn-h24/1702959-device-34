@@ -710,7 +710,14 @@ button.line-btn {
 
 .tabs-list__switch_current {
   background: var(--color-main);
+}
+
+.tabs-list__switch_current .line-btn {
   color: var(--bg-accent);
+}
+
+.tabs-list__switch_current .line-btn::before {
+  content: none;
 }
 
 .tabs-list__item {
