@@ -128,7 +128,7 @@ body {
 .doc-header__main-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 20px 60px 0;
+  padding: 20px 60px 40px;
 }
 
 .doc-header__doc-logo {
@@ -530,6 +530,7 @@ button.line-btn {
   background: linear-gradient(0, var(--bg-accent), var(--bg-accent)) no-repeat 0 0;
   background-size: 100% 114px;
   z-index: 0;
+  margin-top: -40px;
 }
 
 /*slider-control*/
