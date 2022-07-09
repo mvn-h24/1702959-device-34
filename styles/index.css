@@ -524,27 +524,15 @@ a.line-btn {
 
 /*notifications*/
 .notify {
+  --icon-size: 125px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0;
   --message-icon: "#";
   background-color: var(--bg-main-secondary);
-  padding-right: 43px;
-}
-
-.notify::before {
-  content: "";
-  display: block;
-  width: 125px;
-  height: 100px;
-  background-color: var(--bg-accent);
-  background-image: var(--message-icon);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.notify {
+  min-height: 100px;
+  padding: 30px var(--icon-size);
   font-family: var(--font-heading);
   font-weight: var(--font-weight_main_heading);
   font-size: 20px;
@@ -552,6 +540,23 @@ a.line-btn {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.notify::before {
+  content: "";
+  display: block;
+  width: var(--icon-size);
+  height: 100%;
+  background-color: var(--bg-accent);
+  background-image: var(--message-icon);
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: stretch;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .notify__info-message::after {
@@ -564,6 +569,8 @@ a.line-btn {
   height: 40px;
   background-color: rgba(220, 220, 220, 0.5);;
   border-radius: 50%;
+  position: absolute;
+  right: calc(var(--icon-size) / 3);
 }
 
 /*LANDING PAGE*/
