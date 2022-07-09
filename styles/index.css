@@ -492,11 +492,6 @@ a.line-btn {
 }
 
 /*lists*/
-.mark-list__item {
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 20px;
-}
 
 .mark-list {
   list-style: none;
@@ -512,9 +507,21 @@ a.line-btn {
   margin-right: 26px;
 }
 
+.mark-list__item:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.mark-list__item {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 20px;
+}
+
 .implicit-list {
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .features-list {
@@ -884,14 +891,12 @@ a.line-btn {
 
 .columns-layout {
   display: flex;
-}
-
-.columns-layout_two-columns .columns-layout__col {
-  width: 50%;
+  justify-content: space-between;
 }
 
 .columns-layout__col {
   color: var(--color-secondary);
+  flex-basis: 520px;
 }
 
 .columns-layout__col::before {
@@ -916,11 +921,31 @@ a.line-btn {
   font-size: var(--font-size_main_heading);
   line-height: var(--line-height_main_heading);
   font-family: var(--font-heading);
+  margin: 40px 0 48px;
+}
+
+.columns-layout__col-content .line-btn {
+  min-width: 270px;
+}
+
+.columns-layout__col-content > *:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.columns-layout__col-row .columns-layout__col-subheading,
+.columns-layout__col-content .columns-layout__col-subheading {
+  margin-bottom: 15px;
+}
+
+.columns-layout__col section:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .columns-layout__col-subheading {
   font-size: 24px;
   font-weight: 700;
+  margin: 0;
 }
 
 .work-hours__list {
