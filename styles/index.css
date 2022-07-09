@@ -195,16 +195,9 @@ body {
   position: relative;
 }
 
-.doc-nav .btn-toggle-hidden {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 243px;
-}
-
 .doc-nav__nav-list {
   display: flex;
-  gap: 45px;
+  flex-wrap: wrap;
 }
 
 .doc-nav__nav-list li:first-child {
@@ -218,6 +211,10 @@ body {
   list-style: none;
 }
 
+.nav-list__item:not(:last-child) {
+  margin-right: 45px;
+}
+
 .nav-list__item {
   position: relative;
 }
@@ -228,7 +225,7 @@ body {
 }
 
 .doc-nav_nav-nested {
-  transition: .1s;
+  transition: .3s;
   display: block;
   height: 0;
   overflow: hidden;
