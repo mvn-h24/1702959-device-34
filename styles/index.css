@@ -530,6 +530,7 @@ a.line-btn {
   margin: 0;
   --message-icon: "#";
   background-color: var(--bg-main-secondary);
+  padding-right: 43px;
 }
 
 .notify::before {
@@ -562,6 +563,7 @@ a.line-btn {
   width: 40px;
   height: 40px;
   background-color: rgba(220, 220, 220, 0.5);;
+  border-radius: 50%;
 }
 
 /*LANDING PAGE*/
@@ -800,6 +802,7 @@ a.line-btn {
   background: none;
   border: none;
   font-size: inherit;
+  width: 140px;
 }
 
 
