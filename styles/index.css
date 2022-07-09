@@ -792,8 +792,8 @@ a.line-btn {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0 7px 0 0;
+  justify-content: flex-start;
+  padding: 65px 7px 65px 0;
 }
 
 .tabs-list__switch {
@@ -834,7 +834,7 @@ a.line-btn {
   font-weight: var(--font-weight_main_heading);
   font-size: var(--font-size_main_heading);
   line-height: var(--line-height_main_heading);
-  margin: 0;
+  margin: 0 0 35px;
 }
 
 .service-summary__text {
