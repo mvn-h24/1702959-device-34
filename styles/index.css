@@ -560,17 +560,18 @@ a.line-btn {
 }
 
 .notify__info-message::after {
+  --size: 40px;
   content: "";
   background-image: url("../images/icons/info.svg");
   display: block;
   background-repeat: no-repeat;
   background-position: center;
-  width: 40px;
-  height: 40px;
+  width: var(--size);
+  height: var(--size);
   background-color: rgba(220, 220, 220, 0.5);;
   border-radius: 50%;
   position: absolute;
-  right: calc(var(--icon-size) / 3);
+  right: calc(var(--icon-size) / 2 - var(--size) / 2);
 }
 
 /*LANDING PAGE*/
