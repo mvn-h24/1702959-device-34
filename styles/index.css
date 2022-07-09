@@ -212,10 +212,33 @@ body {
 }
 
 .doc-nav__nav-list,
-.doc-nav_nav-catalog {
+.doc-nav_nav-nested {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.nav-list__item {
+  position: relative;
+}
+
+.nav-list__item:hover .doc-nav_nav-nested {
+  padding: 30px 60px;
+  height: auto;
+}
+
+.doc-nav_nav-nested {
+  transition: .1s;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: -60px;
+  background: var(--bg-accent);
+  width: var(--width__main-column);
 }
 
 .nav-list__link {
@@ -229,8 +252,8 @@ body {
   text-decoration: none;
 }
 
-.nav-catalog__link:visited,
-.nav-catalog__link {
+.nav-nested__link:visited,
+.nav-nested__link {
   font-size: var(--font-size_secondary);
   line-height: var(--line-height_secondary);
   color: inherit;
