@@ -121,8 +121,13 @@ body {
 
 .control-panel {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 45px;
+}
+
+.control-panel > *:not(:last-child) {
+  margin-right: 26px;
 }
 
 .doc-header__main-wrapper {
@@ -139,9 +144,9 @@ body {
 .search-string {
   font-size: var(--font-size_ui);
   line-height: var(--line-height_ui);
-  margin-right: 26px;
   position: relative;
   display: flex;
+  width: 517px;
 }
 
 .search-string__input-wrapper {
@@ -161,7 +166,7 @@ body {
 }
 
 .search-string__input {
-  padding: 10px 0 10px 48px;
+  padding: 8px 46px;
   box-sizing: border-box;
   width: 359px;
 }
