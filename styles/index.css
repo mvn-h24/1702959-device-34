@@ -34,6 +34,7 @@
   --color-main: #000000;
   --color-accent: #FFFFFF;
   --color-secondary: #444444;
+  --ui1-gray: #E5E5E5;
   --font-default: "Rubik", sans-serif;
   --font-heading: "Raleway", sans-serif;
 
@@ -83,18 +84,6 @@ body {
   font-size: var(--font-size_main);
   font-weight: var(--font-weight_main);
   line-height: var(--line-height_main);
-}
-
-.catalog {
-  background-color: var(--bg-main-secondary);
-}
-
-.catalog-listing__wrapper {
-  background-color: var(--bg-main);
-}
-
-.catalog-listing {
-  list-style: none;
 }
 
 .doc-main {
@@ -298,7 +287,6 @@ body {
   width: 80px;
   height: 7px;
   background-color: var(--bg-accent-bright);
-  align-self: flex-end;
 }
 
 .doc-footer__wrapper-row .address-location {
@@ -1114,6 +1102,10 @@ a.line-btn {
   padding: 0;
 }
 
+.pagination-list {
+  margin-top: 40px;
+}
+
 /*check-boxes*/
 .checkbox__label-text,
 .radio-btn__label-text {
@@ -1143,6 +1135,17 @@ a.line-btn {
   background-image: url("../images/icons/arrow2-down.svg");
 }
 
+.catalog-listing__wrapper {
+  background-color: var(--bg-main);
+  padding: 70px 40px 80px;
+}
+
+.catalog-listing {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 45px 0;
+}
+
 .catalog-list__item-name {
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -1159,6 +1162,10 @@ a.line-btn {
 
 .catalog-list__item-price::after {
   content: '\20BD';
+}
+
+.show-more-btn {
+  width: 100%;
 }
 
 .transparent-select__option,
@@ -1178,17 +1185,31 @@ a.line-btn {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  background: var(--bg-main);
+  border: 3px solid var(--ui1-gray);
+  padding: 18px;
+  cursor: pointer;
 }
 
-.pagination-list {
+.catalog-pagination-list {
   background-color: var(--bg-main-secondary-pale);
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 45px 0 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.pagination-list__link_next,
-.pagination-list__link_prev {
+.catalog-pagination-list__item:last-child {
+  margin-left: auto;
+}
+
+.catalog-pagination-list__item:first-child {
+  margin-right: auto;
+}
+
+.catalog-pagination-list__link_next,
+.catalog-pagination-list__link_prev {
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 18px;
@@ -1197,13 +1218,22 @@ a.line-btn {
   text-transform: uppercase;
   color: inherit;
   text-decoration: none;
+  padding: 25px;
+  display: inline-block;
 }
 
-.pagination-list__link {
+.catalog-pagination-list__item {
+  display: inline-block;
+  align-self: center;
+}
+
+.catalog-pagination-list__link {
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   color: var(--color-secondary);
   text-decoration: none;
+  display: inline-block;
+  padding: 10px 17px;
 }
 
