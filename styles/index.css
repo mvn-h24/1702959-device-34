@@ -35,8 +35,8 @@
   --color-accent: #FFFFFF;
   --color-secondary: #444444;
   --ui1-gray: #E5E5E5;
-  --font-default: "Rubik", sans-serif;
-  --font-heading: "Raleway", sans-serif;
+  --font-default: "Rubik";
+  --font-heading: "Raleway";
 
   --font-size_main: 18px;
   --line-height_main: 30px;
@@ -80,7 +80,7 @@ body {
   flex-direction: column;
   margin: 0;
   color: var(--color-main);
-  font-family: var(--font-default);
+  font-family: var(--font-default), sans-serif;
   font-size: var(--font-size_main);
   font-weight: var(--font-weight_main);
   line-height: var(--line-height_main);
@@ -257,7 +257,7 @@ body {
   letter-spacing: 0.2em;
   line-height: var(--line-height_main_uppercase);
   text-transform: uppercase;
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), sans-serif;
   font-weight: 800;
   color: inherit;
   text-decoration: none;
@@ -330,7 +330,7 @@ body {
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -558,7 +558,7 @@ button.line-btn {
   background-color: var(--bg-main-secondary);
   min-height: 100px;
   padding: 30px var(--icon-size);
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), sans-serif;
   font-weight: var(--font-weight_main_heading);
   font-size: 20px;
   line-height: 23px;
@@ -716,7 +716,7 @@ button.line-btn {
 }
 
 .seo-info__title {
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), sans-serif;
   font-weight: var(--font-weight_main_heading);
   font-style: normal;
   font-size: var(--font-size_main_heading);
@@ -776,7 +776,7 @@ button.line-btn {
   width: 160px;
   white-space: pre-wrap;
   color: inherit;
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), sans-serif;
   line-height: 24px;
   letter-spacing: -0.02em;
   font-weight: 800;
@@ -867,7 +867,7 @@ button.line-btn {
 }
 
 .service-summary__title {
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), sans-serif;
   font-weight: var(--font-weight_main_heading);
   font-size: var(--font-size_main_heading);
   line-height: var(--line-height_main_heading);
@@ -931,7 +931,8 @@ button.line-btn {
   color: var(--color-main);
 }
 
-.columns-layout__col address a {
+.contacts-list .anchor-link,
+.contacts-list .address-location__implicit-anchor {
   color: inherit;
 }
 
@@ -939,7 +940,7 @@ button.line-btn {
   font-weight: var(--font-weight_main_heading);
   font-size: var(--font-size_main_heading);
   line-height: var(--line-height_main_heading);
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), sans-serif;
   margin: 40px 0 48px;
 }
 
@@ -997,7 +998,7 @@ button.line-btn {
   font-size: var(--font-size_main_heading);
   line-height: var(--line-height_main_heading);
   font-weight: var(--font-weight_main_heading);
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), sans-serif;
   margin: 0;
   max-width: 346px;
 }
@@ -1025,7 +1026,7 @@ button.line-btn {
 }
 
 .subscribe-form__submit {
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -1126,7 +1127,7 @@ button.line-btn {
 /*catalog filter*/
 .catalog-sort__heading,
 .catalog-filter__heading {
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -1248,7 +1249,7 @@ button.line-btn {
 
 /*pagination*/
 .outline-btn {
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -1280,7 +1281,7 @@ button.line-btn {
 
 .catalog-pagination-list__link_next,
 .catalog-pagination-list__link_prev {
-  font-family: var(--font-heading);
+  font-family: var(--font-heading), sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
