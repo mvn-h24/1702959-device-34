@@ -1,27 +1,28 @@
 function initTabs(){
-  var tabs = function ()  {
+  const getTabs = function ()  {
     return document.querySelectorAll('.tabs-list__item');
   }
-  var contentTabs = function () {
+  const getTabsContent = function () {
     return document.querySelectorAll('.tabs-list__tab-layout .service-summary');
   }
-  var currTab = 'tabs-list__switch_current';
-  var hiddenClass = 'hidden';
-  tabs().forEach(function(tab, key) {
+  const currTab = 'tabs-list__switch_current';
+  const hiddenClass = 'hidden';
+  getTabs().forEach(function(tab, key) {
     tab.addEventListener('click', function (event) {
-      tabs().forEach(function (tab) {
+      getTabs().forEach(function (tab) {
         tab.classList.remove(currTab)
       })
+      let currentTab;
       if(event.target.tagName === 'BUTTON'){
         currentTab = event.target.parentElement;
       }else{
         currentTab = event.target;
       }
       currentTab.classList.add(currTab)
-      contentTabs().forEach(function (contentTab){
+      getTabsContent().forEach(function (contentTab){
         contentTab.classList.add(hiddenClass)
       })
-      contentTabs().item(key).classList.remove(hiddenClass)
+      getTabsContent().item(key).classList.remove(hiddenClass)
     })
   })
 }
