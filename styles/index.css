@@ -1196,6 +1196,10 @@ button.line-btn {
   gap: 30px 40px
 }
 
+.catalog-list__item-image {
+  object-fit: cover;
+}
+
 .catalog-list__item-review {
   margin: 0;
   grid-column: 1/-1;
