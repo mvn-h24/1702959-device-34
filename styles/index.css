@@ -1174,6 +1174,9 @@ button.line-btn {
   list-style: none;
   padding: 0;
   margin: 0 0 45px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 45px 40px;
 }
 
 .catalog-list__item {
