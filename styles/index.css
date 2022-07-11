@@ -313,6 +313,10 @@ body {
   margin: 0 auto 0 119px;
 }
 
+.doc-footer .inner-section-menu__anchor {
+  padding: 10px 0;
+}
+
 .inner-section-menu__anchor {
   color: inherit;
   text-decoration: none;
@@ -424,6 +428,10 @@ body {
   font-style: normal;
   color: inherit;
   font-weight: normal;
+}
+
+.doc-footer .anchor-link {
+  padding: 10px 0;
 }
 
 .btn-toggle-hidden {
