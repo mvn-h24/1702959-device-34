@@ -160,88 +160,86 @@
           </fieldset>
           <button class="line-btn catalog-filter__submit-btn" type="submit">Показать</button>
         </form>
-        <div class="catalog-col__wrapper">
-          <form class="catalog-sort__form" action="https://echo.htmlacademy.ru/" method="GET">
-            <fieldset class="catalog-sort">
-              <legend class="catalog-sort__heading">Сортировка</legend>
-              <label class="transparent-select__catalog-sort">
-                <select class="transparent-select" name="sortBy">
-                  <option class="transparent-select__option" selected>Популярные</option>
-                  <option class="transparent-select__option">Рейтинг</option>
-                  <option class="transparent-select__option">Стоимость</option>
-                </select>
-              </label>
-            </fieldset>
-            <fieldset class="catalog-sort__order-btn-group">
-              <legend class="visually-hidden">Направление сортировки</legend>
-              <label class="order-btn-group__item order-btn-group__item-asc">
-                <input class="order-btn-group__asc visually-hidden" name="order" value="asc" type='radio' checked>
-              </label>
-              <label class="order-btn-group__item order-btn-group__item-desc">
-                <input class="order-btn-group__desc visually-hidden" name="order" value="desc" type='radio'>
-              </label>
-            </fieldset>
-          </form>
-          <div class="catalog-listing__wrapper">
-            <ul class="catalog-listing">
-              <li class="catalog-list__item">
-                <figure class="catalog-list__item-review">
-                  <img class="catalog-list__item-image" src="images/content/catalog/product-0-fanstick.jpg" alt="Селфи-палка обычная." width="360" height="380">
-                  <figcaption class="catalog-list__item-name">Любительская селфи-палка</figcaption>
-                </figure>
-                <span class="catalog-list__item-price">500</span>
-                <a class="visually-hidden catalog-list__item-link" href="#">Перейти.</a>
-              </li>
-              <li class="catalog-list__item">
-                <figure class="catalog-list__item-review">
-                  <img class="catalog-list__item-image" src="images/content/catalog/product-1-prostick.jpg" alt="Селфи-палка для профи." width="360" height="380">
-                  <figcaption class="catalog-list__item-name">Профессиональная селфи-палка</figcaption>
-                </figure>
-                <span class="catalog-list__item-price">1 500</span>
-                <a class="visually-hidden catalog-list__item-link" href="#">Перейти.</a>
-              </li>
-              <li class="catalog-list__item">
-                <figure class="catalog-list__item-review">
-                  <img class="catalog-list__item-image" src="images/content/catalog/product-2-wrs.jpg" alt="Селфи-палка водонепроницаемая." width="360" height="380">
-                  <figcaption class="catalog-list__item-name">Непотопляемая селфи-палка</figcaption>
-                </figure>
-                <span class="catalog-list__item-price">2 500</span>
-                <a class="visually-hidden catalog-list__item-link" href="#">Перейти.</a>
-              </li>
-              <li class="catalog-list__item">
-                <figure class="catalog-list__item-review">
-                  <img class="catalog-list__item-image" src="images/content/catalog/product-3-hand.jpg" alt="Селфи-палка не обычная." width="360" height="380">
-                  <figcaption class="catalog-list__item-name">Селфи-палка «Следуй за мной»</figcaption>
-                </figure>
-                <span class="catalog-list__item-price">1 500</span>
-                <a class="visually-hidden catalog-list__item-link" href="#">Перейти.</a>
-              </li>
-            </ul>
-            <button class="outline-btn show-more-btn">Загрузить еще</button>
-            <ol class="catalog-pagination-list">
-              <li class="catalog-pagination-list__item">
-                <a class="catalog-pagination-list__link_prev" href="#">Назад</a>
-              </li>
-              <li class="catalog-pagination-list__item">
-                <a class="catalog-pagination-list__link" href="#">1</a>
-              </li>
-              <li class="catalog-pagination-list__item">
-                <a class="catalog-pagination-list__link" href="#">2</a>
-              </li>
-              <li class="catalog-pagination-list__item">
-                <a class="catalog-pagination-list__link" href="#">3</a>
-              </li>
-              <li class="catalog-pagination-list__item">
-                <a class="catalog-pagination-list__link" href="#">...</a>
-              </li>
-              <li class="catalog-pagination-list__item">
-                <a class="catalog-pagination-list__link" href="#">15</a>
-              </li>
-              <li class="catalog-pagination-list__item">
-                <a class="catalog-pagination-list__link_next" href="#">Вперед</a>
-              </li>
-            </ol>
-          </div>
+        <form class="catalog-sort__form" action="https://echo.htmlacademy.ru/" method="GET">
+          <fieldset class="catalog-sort">
+            <legend class="catalog-sort__heading">Сортировка</legend>
+            <label class="transparent-select__catalog-sort">
+              <select class="transparent-select" name="sortBy">
+                <option class="transparent-select__option" selected>Популярные</option>
+                <option class="transparent-select__option">Рейтинг</option>
+                <option class="transparent-select__option">Стоимость</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset class="catalog-sort__order-btn-group">
+            <legend class="visually-hidden">Направление сортировки</legend>
+            <label class="order-btn-group__item order-btn-group__item-asc">
+              <input class="order-btn-group__asc visually-hidden" name="order" value="asc" type='radio' checked>
+            </label>
+            <label class="order-btn-group__item order-btn-group__item-desc">
+              <input class="order-btn-group__desc visually-hidden" name="order" value="desc" type='radio'>
+            </label>
+          </fieldset>
+        </form>
+        <div class="catalog-listing__wrapper">
+          <ul class="catalog-listing">
+            <li class="catalog-list__item">
+              <figure class="catalog-list__item-review">
+                <img class="catalog-list__item-image" src="images/content/catalog/product-0-fanstick.jpg" alt="Селфи-палка обычная." width="360" height="380">
+                <figcaption class="catalog-list__item-name">Любительская селфи-палка</figcaption>
+              </figure>
+              <span class="catalog-list__item-price">500</span>
+              <a class="visually-hidden catalog-list__item-link" href="#">Перейти.</a>
+            </li>
+            <li class="catalog-list__item">
+              <figure class="catalog-list__item-review">
+                <img class="catalog-list__item-image" src="images/content/catalog/product-1-prostick.jpg" alt="Селфи-палка для профи." width="360" height="380">
+                <figcaption class="catalog-list__item-name">Профессиональная селфи-палка</figcaption>
+              </figure>
+              <span class="catalog-list__item-price">1 500</span>
+              <a class="visually-hidden catalog-list__item-link" href="#">Перейти.</a>
+            </li>
+            <li class="catalog-list__item">
+              <figure class="catalog-list__item-review">
+                <img class="catalog-list__item-image" src="images/content/catalog/product-2-wrs.jpg" alt="Селфи-палка водонепроницаемая." width="360" height="380">
+                <figcaption class="catalog-list__item-name">Непотопляемая селфи-палка</figcaption>
+              </figure>
+              <span class="catalog-list__item-price">2 500</span>
+              <a class="visually-hidden catalog-list__item-link" href="#">Перейти.</a>
+            </li>
+            <li class="catalog-list__item">
+              <figure class="catalog-list__item-review">
+                <img class="catalog-list__item-image" src="images/content/catalog/product-3-hand.jpg" alt="Селфи-палка не обычная." width="360" height="380">
+                <figcaption class="catalog-list__item-name">Селфи-палка «Следуй за мной»</figcaption>
+              </figure>
+              <span class="catalog-list__item-price">1 500</span>
+              <a class="visually-hidden catalog-list__item-link" href="#">Перейти.</a>
+            </li>
+          </ul>
+          <button class="outline-btn show-more-btn">Загрузить еще</button>
+          <ol class="catalog-pagination-list">
+            <li class="catalog-pagination-list__item">
+              <a class="catalog-pagination-list__link_prev" href="#">Назад</a>
+            </li>
+            <li class="catalog-pagination-list__item">
+              <a class="catalog-pagination-list__link" href="#">1</a>
+            </li>
+            <li class="catalog-pagination-list__item">
+              <a class="catalog-pagination-list__link" href="#">2</a>
+            </li>
+            <li class="catalog-pagination-list__item">
+              <a class="catalog-pagination-list__link" href="#">3</a>
+            </li>
+            <li class="catalog-pagination-list__item">
+              <a class="catalog-pagination-list__link" href="#">...</a>
+            </li>
+            <li class="catalog-pagination-list__item">
+              <a class="catalog-pagination-list__link" href="#">15</a>
+            </li>
+            <li class="catalog-pagination-list__item">
+              <a class="catalog-pagination-list__link_next" href="#">Вперед</a>
+            </li>
+          </ol>
         </div>
       </div>
     </main>
