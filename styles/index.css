@@ -676,6 +676,14 @@ button.line-btn {
   width: calc(var(--slide-col-width) - 50px);
 }
 
+.slideshow-control__next-slide,
+.slideshow-control__prev-slide {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .slideshow-control__next-slide::before {
   content: url("../images/icons/left-tall-arrow.svg");
 }
