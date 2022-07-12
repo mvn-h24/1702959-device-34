@@ -1101,6 +1101,14 @@ button.line-btn {
   flex-grow: 1;
 }
 
+.subscribe-form__input {
+  background: none;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
+  background: none;
+  padding: 16px 11px;
+}
+
 .subscribe-form__input,
 .subscribe-form__input::placeholder {
   font-style: inherit;
@@ -1123,6 +1131,10 @@ button.line-btn {
   text-transform: uppercase;
   min-height: 57px;
   box-sizing: border-box;
+  padding: 15px 36px;
+  cursor: pointer;
+  border: none;
+  border: 3px solid #C4C4C4;
 }
 
 .feature-item {
