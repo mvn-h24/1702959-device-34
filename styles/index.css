@@ -348,6 +348,19 @@ body {
   margin: 0 auto 0 424px;
 }
 
+.social-menu__item:nth-child(1) .social-icon {
+  --bg: url('../images/content/social/1-telegram.svg')
+}
+
+.social-menu__item:nth-child(2) .social-icon {
+  --bg: url('../images/content/social/2-youtube.svg')
+}
+
+.social-menu__item:nth-child(3) .social-icon {
+  --bg: url('../images/content/social/3-twitter.svg')
+}
+
+
 .social-icon {
   --bg: "#";
   background-image: var(--bg);
@@ -599,6 +612,10 @@ button.line-btn {
   right: calc(var(--icon-size) / 2 - var(--size) / 2);
 }
 
+.notify__info-message_delivery {
+  --message-icon: url('../images/icons/delivery.svg');
+}
+
 /*LANDING PAGE*/
 /*promo section*/
 /*slider*/
@@ -794,6 +811,31 @@ button.line-btn {
   margin-bottom: 32px;
 }
 
+.category-list__item:nth-child(1) .category-list__anchor {
+  --bg: url('../images/content/categories/category-1-vr.svg')
+}
+
+.category-list__item:nth-child(2) .category-list__anchor {
+  --bg: url('../images/content/categories/category-2-handlesticks.svg')
+}
+
+.category-list__item:nth-child(3) .category-list__anchor {
+  --bg: url('../images/content/categories/category-3-acp.svg')
+}
+
+.category-list__item:nth-child(4) .category-list__anchor {
+  --bg: url('../images/content/categories/category-4-fitbrace.svg')
+}
+
+.category-list__item:nth-child(5) .category-list__anchor {
+  --bg: url('../images/content/categories/category-5-swatch.svg')
+}
+
+.category-list__item:nth-child(6) .category-list__anchor {
+  --bg: url('../images/content/categories/category-6-qb.svg')
+}
+
+
 /*services section*/
 .doc-services {
   background: linear-gradient(0, var(--bg-main), var(--bg-main)) no-repeat 0 0;
@@ -892,6 +934,19 @@ button.line-btn {
   content: var(--bg);
   display: inline-block;
 }
+
+.service-summary:nth-child(1) {
+  --bg: url('../images/content/services/service-1-delivery.svg')
+}
+
+.service-summary:nth-child(2) {
+  --bg: url('../images/content/services/service-2-garanty.svg')
+}
+
+.service-summary:nth-child(3) {
+  --bg: url('../images/content/services/service-3-credit.svg')
+}
+
 
 /*about-us section*/
 .doc__about-us .notify {
