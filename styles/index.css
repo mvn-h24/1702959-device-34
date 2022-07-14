@@ -35,6 +35,7 @@
   --color-accent: #FFFFFF;
   --color-secondary: #444444;
   --ui1-gray: #E5E5E5;
+  --focus-outline: 2px solid #AF4FFF;
   --font-default: "Rubik";
   --font-heading: "Raleway";
 
@@ -55,6 +56,11 @@
   --line-height_secondary: 18px;
 
   --width__main-column: 1160px;
+
+  --hover-opaity: 0.6;
+  --active-opaity: 0.6;
+  --outline-offset: 2px;
+  --simple-transition: 0.2s linear;
 }
 
 .visually-hidden {
@@ -130,6 +136,7 @@ body {
 }
 
 .doc-header__doc-logo {
+  background: url("../images/content/shop/logo.svg");
   margin-bottom: 30px;
 }
 
@@ -294,6 +301,7 @@ body {
 }
 
 .doc-footer__doc-logo {
+  background: url("../images/content/shop/logo-accent.svg");
   margin-bottom: 35px;
 }
 
@@ -386,8 +394,21 @@ body {
 
 /*REUSED COMPONENTS*/
 /*buttons*/
+.doc-logo:hover {
+  opacity: var(--hover-opaity);
+}
+
+.doc-logo:active {
+  opacity: var(--active-opaity);
+}
+
+.doc-logo:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
 .doc-logo {
-  background: url("../images/content/shop/logo.svg");
+  transition: var(--simple-transition);
   display: inline-block;
   width: 145px;
   height: 36px;
@@ -1105,7 +1126,6 @@ button.line-btn {
   background: none;
   border: none;
   border-bottom: 3px solid #C4C4C4;
-  background: none;
   padding: 16px 11px;
 }
 
@@ -1133,7 +1153,6 @@ button.line-btn {
   box-sizing: border-box;
   padding: 15px 36px;
   cursor: pointer;
-  border: none;
   border: 3px solid #C4C4C4;
 }
 
