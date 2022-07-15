@@ -1391,9 +1391,33 @@ button.line-btn {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   background: var(--bg-main);
-  border: 3px solid var(--ui1-gray);
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--ui1-gray);
   padding: 18px;
   cursor: pointer;
+  transition: var(--simple-transition);
+}
+
+.outline-btn:hover {
+  border-color: var(--color-main);
+}
+
+.outline-btn:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+  border-color: var(--ui1-gray);
+}
+
+.outline-btn:active {
+  outline: none;
+  opacity: var(--active-opaity);
+  border-color: var(--color-main);
+}
+
+.outline-btn:disabled {
+  opacity: var(--active-opaity);
+  border-color: var(--ui1-gray);
 }
 
 .catalog-pagination-list {
