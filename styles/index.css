@@ -156,13 +156,10 @@ body {
 .search-string__input-wrapper::before {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url("../images/icons/search.svg");
+
   background-size: cover;
   position: absolute;
-  left: 16px;
-  top: 12px;
+
 }
 
 .search-string__input {
@@ -171,8 +168,11 @@ body {
   width: 359px;
   border-radius: 50px 0 0 50px;
   border: 2px solid black;
-  background: transparent;
+  background-color: transparent;
   border-right: none;
+  background-image: url("../images/icons/search.svg");
+  background-size: 16px 16px;
+  background-position: 16px 10px;
 }
 
 .search-string__input,
@@ -183,6 +183,20 @@ body {
   font-size: inherit;
   line-height: inherit;
   color: inherit;
+}
+
+.search-string__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-string__input:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+.search-string__input:disabled::before,
+.search-string__input:disabled {
+  opacity: 0.3;
 }
 
 .search-string__submit {
