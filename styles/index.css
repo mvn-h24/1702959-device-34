@@ -424,6 +424,20 @@ body {
   text-decoration: none;
 }
 
+.doc-logo[href]:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+.doc-logo[href]:hover {
+  outline: none;
+  opacity: var(--hover-opaity);
+}
+
+.doc-logo[href]:active {
+  opacity: var(--active-opaity);
+}
+
 .logout-btn {
   opacity: 0.3;
 }
