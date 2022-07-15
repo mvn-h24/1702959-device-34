@@ -58,7 +58,7 @@
   --width__main-column: 1160px;
 
   --hover-opaity: 0.6;
-  --active-opaity: 0.6;
+  --active-opaity: 0.3;
   --outline-offset: 2px;
   --simple-transition: 0.2s linear;
 }
@@ -398,13 +398,14 @@ body {
   opacity: var(--hover-opaity);
 }
 
-.doc-logo:active {
-  opacity: var(--active-opaity);
-}
-
 .doc-logo:focus {
   outline: var(--focus-outline);
   outline-offset: var(--outline-offset);
+}
+
+.doc-logo:active {
+  outline: none;
+  opacity: var(--active-opaity);
 }
 
 .doc-logo {
