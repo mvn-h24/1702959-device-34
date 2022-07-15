@@ -114,10 +114,6 @@ body {
   margin-right: 36px;
 }
 
-.control-panel .string-btn {
-  padding: 5px 0;
-}
-
 .control-panel {
   display: flex;
   flex-wrap: wrap;
@@ -132,7 +128,8 @@ body {
 .doc-header__main-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 20px 60px 25px;
+  padding: 20px 60px 0;
+  z-index: 5;
 }
 
 .doc-header__doc-logo {
@@ -263,6 +260,7 @@ body {
   align-items: center;
 }
 
+.nav-list__item:focus-within .doc-nav_nav-nested,
 .nav-list__item:hover .doc-nav_nav-nested {
   padding: 30px 60px;
   height: auto;
@@ -276,7 +274,7 @@ body {
   overflow: hidden;
   box-sizing: border-box;
   position: absolute;
-  z-index: 99;
+  z-index: 10;
   top: 100%;
   left: -60px;
   background: var(--bg-accent);
@@ -300,7 +298,7 @@ body {
   font-weight: 800;
   color: inherit;
   text-decoration: none;
-  padding: 15px 0;
+  z-index: 11;
 }
 
 .nav-nested__link:visited,
@@ -528,7 +526,7 @@ body {
 
 .control-panel .cart-btn {
   position: relative;
-  padding: 5px 5px 5px 15px;
+  padding: 0 0 0 15px;
 }
 
 .cart-btn__counter {
@@ -538,7 +536,7 @@ body {
   height: var(--size);
   border-radius: 50%;
   left: 0;
-  top: 10px;
+  top: 5px;
   background: #FFF;
   display: inline-flex;
   justify-content: center;
@@ -773,7 +771,6 @@ button.line-btn {
   background: linear-gradient(0, var(--bg-accent), var(--bg-accent)) no-repeat 0 0;
   background-size: 100% 114px;
   z-index: 0;
-  margin-top: -40px;
 }
 
 /*slider-control*/
