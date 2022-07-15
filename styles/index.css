@@ -1155,6 +1155,38 @@ button.line-btn {
   padding: 15px 36px;
   cursor: pointer;
   border: 3px solid #C4C4C4;
+  transition: var(--simple-transition);
+  color: var(--color-main);
+}
+
+
+.subscribe-form__submit:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+  background-color: transparent;
+}
+
+
+.subscribe-form__submit:hover {
+  outline: none;
+  border-color: var(--color-main);
+  background-color: var(--color-main);
+  color: var(--color-accent);
+}
+
+.subscribe-form__submit:active {
+  outline: none;
+  border-color: var(--color-main);
+  background-color: var(--color-main);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-form__submit:disabled {
+  cursor: pointer;
+  border: 3px solid #C4C4C4;
+  background: transparent;
+  color: var(--color-main);
+  opacity: var(--active-opaity);
 }
 
 .feature-item {
