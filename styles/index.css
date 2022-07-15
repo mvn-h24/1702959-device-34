@@ -351,6 +351,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .inner-section-menu {
@@ -377,6 +378,7 @@ body {
 
 .inner-section-menu, .social-menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .social-menu {
@@ -584,6 +586,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 15px;
+  flex-shrink: 0;
 }
 
 .nav-list__link-catalog:hover::after {
@@ -808,6 +811,7 @@ button.line-btn {
 
 .catalog-slider__pagination-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   position: absolute;
   bottom: 173px;
@@ -1313,6 +1317,7 @@ button.line-btn {
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs__list-item:not(:last-child) {
