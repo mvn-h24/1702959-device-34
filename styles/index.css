@@ -394,8 +394,11 @@ body {
 
 /*REUSED COMPONENTS*/
 /*buttons*/
-.doc-logo:hover {
-  opacity: var(--hover-opaity);
+.doc-logo {
+  transition: var(--simple-transition);
+  display: inline-block;
+  width: 145px;
+  height: 36px;
 }
 
 .doc-logo:focus {
@@ -403,16 +406,13 @@ body {
   outline-offset: var(--outline-offset);
 }
 
-.doc-logo:active {
+.doc-logo:hover {
   outline: none;
-  opacity: var(--active-opaity);
+  opacity: var(--hover-opaity);
 }
 
-.doc-logo {
-  transition: var(--simple-transition);
-  display: inline-block;
-  width: 145px;
-  height: 36px;
+.doc-logo:active {
+  opacity: var(--active-opaity);
 }
 
 .string-btn {
@@ -1175,7 +1175,6 @@ button.line-btn {
 }
 
 .subscribe-form__submit:active {
-  outline: none;
   border-color: var(--color-main);
   background-color: var(--color-main);
   color: rgba(255, 255, 255, 0.3);
@@ -1233,10 +1232,7 @@ button.line-btn {
   line-height: 19px;
   text-decoration: none;
   color: inherit;
-}
-
-.breadcrumbs__anchor[href]:hover {
-  opacity: var(--hover-opaity);
+  transition: var(--simple-transition);
 }
 
 .breadcrumbs__anchor[href]:focus {
@@ -1244,8 +1240,12 @@ button.line-btn {
   outline-offset: var(--outline-offset);
 }
 
-.breadcrumbs__anchor[href]:active {
+.breadcrumbs__anchor[href]:hover {
   outline: none;
+  opacity: var(--hover-opaity);
+}
+
+.breadcrumbs__anchor[href]:active {
   opacity: var(--active-opaity);
 }
 
@@ -1431,18 +1431,18 @@ button.line-btn {
   transition: var(--simple-transition);
 }
 
-.outline-btn:hover {
-  border-color: var(--color-main);
-}
-
 .outline-btn:focus {
   outline: var(--focus-outline);
   outline-offset: var(--outline-offset);
   border-color: var(--ui1-gray);
 }
 
-.outline-btn:active {
+.outline-btn:hover {
   outline: none;
+  border-color: var(--color-main);
+}
+
+.outline-btn:active {
   opacity: var(--active-opaity);
   border-color: var(--color-main);
 }
