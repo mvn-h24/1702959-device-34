@@ -1203,6 +1203,20 @@ button.line-btn {
   color: inherit;
 }
 
+.breadcrumbs__anchor[href]:hover {
+  opacity: var(--hover-opaity);
+}
+
+.breadcrumbs__anchor[href]:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+.breadcrumbs__anchor[href]:active {
+  outline: none;
+  opacity: var(--active-opaity);
+}
+
 .breadcrumbs__list-item:not(:first-child)::before {
   content: "";
   display: inline-block;
