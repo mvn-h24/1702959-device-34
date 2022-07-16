@@ -1385,18 +1385,16 @@ button.line-btn {
   border-bottom: 3px solid #C4C4C4;
   padding: 15px 17px;
   flex-grow: 1;
-  color: rgba(0, 0, 0);
+  color: var(--color-secondary);
   transition: var(--simple-transition);
+  outline: none;
 }
 
 .subscribe-form__input:focus {
-  outline: var(--focus-outline);
-  outline-offset: var(--outline-offset);
-  z-index: 100;
+  background-color: #DCDCDC;
 }
 
-.subscribe-form__input:hover {
-  background-color: #DCDCDC;
+.subscribe-form__input:active {
   outline: none;
 }
 
@@ -1407,16 +1405,7 @@ button.line-btn {
 }
 
 .subscribe-form__input:not(:placeholder-shown):invalid {
-  outline: solid 2px var(--error-color);
-  z-index: 10;
-  outline-offset: -2px;
-}
-
-.subscribe-form__input:not(:placeholder-shown):invalid + .subscribe-form__input-label::before {
-  content: "Забавный у вас email";
-  color: var(--error-color);
-  font-size: 14px;
-  line-height: 20px;
+  border-bottom-color: var(--error-color);
 }
 
 .subscribe-form__input:disabled {
@@ -1425,7 +1414,7 @@ button.line-btn {
 }
 
 .subscribe-form__input::placeholder {
-  color: var(--color-secondary);
+  color: rgba(68, 68, 68, 0.5);
 }
 
 .subscribe-form__input,
