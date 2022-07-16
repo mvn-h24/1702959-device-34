@@ -1739,12 +1739,55 @@ button.line-btn {
   gap: 45px 40px;
 }
 
-.catalog-list__item {
+.catalog-list__anchor {
   width: 360px;
   display: grid;
   grid-template-columns: 200px 120px;
   grid-template-rows: 380px auto;
-  gap: 30px 40px
+  gap: 30px 40px;
+  text-decoration: none;
+  transition: var(--simple-transition);
+  position: relative;
+}
+
+.catalog-list__anchor:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+  border-color: var(--ui1-gray);
+}
+
+.catalog-list__anchor:hover .catalog-list__item-review,
+.catalog-list__anchor:hover .catalog-list__item-price {
+  opacity: var(--hover-opaity);
+}
+
+.catalog-list__anchor:hover {
+  outline: none;
+}
+
+.catalog-list__anchor:active .catalog-list__item-review,
+.catalog-list__anchor:active .catalog-list__item-price {
+  opacity: var(--active-opaity);
+}
+
+.catalog-list__anchor:active .line-btn::before {
+  background-color: var(--bg-accent-bright);
+}
+
+
+.catalog-list__anchor .line-btn {
+  display: none;
+  width: 220px;
+  grid-row: 1/2;
+  grid-column: 1/4;
+  justify-self: center;
+  align-self: center;
+  height: min-content;
+  position: absolute;
+}
+
+.catalog-list__anchor:hover .line-btn {
+  display: inline-flex;
 }
 
 .catalog-list__item-image {
@@ -1758,7 +1801,8 @@ button.line-btn {
   display: grid;
   grid-template-columns: 200px 120px;
   grid-template-rows: 380px auto;
-  gap: 30px 40px
+  gap: 30px 40px;
+  transition: var(--simple-transition);
 }
 
 .catalog-list__item-name {
@@ -1767,6 +1811,7 @@ button.line-btn {
   line-height: 20px;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  color: var(--color-main);
 }
 
 .catalog-list__item-price {
@@ -1779,6 +1824,7 @@ button.line-btn {
   grid-row: -1 / -2;
   align-self: start;
   justify-self: end;
+  transition: var(--simple-transition);
 }
 
 .catalog-list__item-price::after {
