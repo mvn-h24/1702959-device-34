@@ -38,7 +38,7 @@
   --focus-outline: 2px solid #AF4FFF;
   --font-default: "Rubik";
   --font-heading: "Raleway";
-
+  --error-color: #FF3D3D;
   --font-size_main: 18px;
   --line-height_main: 30px;
   --font-weight_main: 400;
@@ -1345,6 +1345,7 @@ button.line-btn {
 .subscribe-form__input-group {
   width: 810px;
   display: flex;
+  position: relative;
 }
 
 .subscribe-form__title {
@@ -1363,15 +1364,53 @@ button.line-btn {
   padding-top: 10px;
 }
 
-.subscribe-form__input-wrapper {
-  flex-grow: 1;
-}
-
 .subscribe-form__input {
   background: none;
   border: none;
   border-bottom: 3px solid #C4C4C4;
   padding: 15px 17px;
+  flex-grow: 1;
+  color: rgba(0, 0, 0);
+  transition: var(--simple-transition);
+}
+
+.subscribe-form__input:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+  z-index: 100;
+}
+
+.subscribe-form__input:hover {
+  background-color: #DCDCDC;
+  outline: none;
+}
+
+.subscribe-form__input-label {
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.subscribe-form__input:not(:placeholder-shown):invalid {
+  outline: solid 2px var(--error-color);
+  z-index: 10;
+  outline-offset: -2px;
+}
+
+.subscribe-form__input:not(:placeholder-shown):invalid + .subscribe-form__input-label::before {
+  content: "Забавный у вас email";
+  color: var(--error-color);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.subscribe-form__input:disabled {
+  background: var(--bg-main-secondary);
+  opacity: 0.3;
+}
+
+.subscribe-form__input::placeholder {
+  color: var(--color-secondary);
 }
 
 .subscribe-form__input,
@@ -1380,7 +1419,6 @@ button.line-btn {
   font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
-  color: var(--color-secondary);
   width: 100%;
   height: 100%;
   box-sizing: border-box;
