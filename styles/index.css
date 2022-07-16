@@ -1739,6 +1739,30 @@ button.line-btn {
   gap: 45px 40px;
 }
 
+.catalog-list__anchor.new .catalog-list__item-review::after {
+  content: "NEW";
+  color: rgba(0, 0, 0, 0.6);
+  font-family: var(--font-heading);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  box-sizing: border-box;
+  right: 27px;
+  top: 27px;
+}
+
 .catalog-list__anchor {
   width: 360px;
   display: grid;
