@@ -128,7 +128,7 @@ body {
 .doc-header__main-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 20px 60px 0;
+  padding: 20px 60px;
   z-index: 5;
 }
 
@@ -505,7 +505,7 @@ body {
 
 .control-panel .compare-btn {
   margin-left: auto;
-  margin-right: 16px;
+  margin-right: 18px;
 }
 
 .compare-btn::before {
@@ -523,7 +523,7 @@ body {
   background-size: 100% 100%;
   width: 16px;
   height: 14px;
-  margin-right: 12px;
+  margin-right: 7px;
 }
 
 .control-panel .cart-btn {
@@ -543,6 +543,8 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  line-height: 17px;
+  font-size: 14px;
 }
 
 
@@ -587,6 +589,7 @@ body {
   background-position: center;
   margin-left: 15px;
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .nav-list__link-catalog:hover::after {
@@ -774,6 +777,7 @@ button.line-btn {
   background: linear-gradient(0, var(--bg-accent), var(--bg-accent)) no-repeat 0 0;
   background-size: 100% 114px;
   z-index: 0;
+  margin-top: -40px;
 }
 
 /*slider-control*/
@@ -790,7 +794,7 @@ button.line-btn {
   position: absolute;
   top: 211px;
   left: 30px;
-  width: calc(var(--slide-col-width) - 50px);
+  width: calc(var(--slide-col-width) - 30px);
 }
 
 .slideshow-control__next-slide,
@@ -863,7 +867,7 @@ button.line-btn {
 
 .slide__info-column {
   width: var(--slide-col-width);
-  padding: 121px 0 38px;
+  padding: 125px 0 38px;
 }
 
 .slide__counter {
@@ -874,13 +878,13 @@ button.line-btn {
   line-height: 30px;
   color: #FFF;
   position: absolute;
-  right: 60px;
+  right: 50px;
   bottom: 80%;
   z-index: -1;
 }
 
 .slide__link {
-  width: 210px;
+  width: 220px;
 }
 
 .seo-info__title {
