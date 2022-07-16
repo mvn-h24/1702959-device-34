@@ -450,6 +450,8 @@ body {
 
 .social-icon {
   display: inline-flex;
+  transition: var(--simple-transition);
+
 }
 
 .social-icon::after {
@@ -658,7 +660,12 @@ body {
 }
 
 .doc-footer .anchor-link {
-  padding: 10px 0;
+  text-decoration: underline 1px solid var(--color-accent);
+}
+
+.doc-footer .address-location__implicit-anchor:hover,
+.doc-footer .anchor-link:hover {
+  color: var(--bg-accent-bright);
 }
 
 .nav-list__link-catalog {
