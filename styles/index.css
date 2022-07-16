@@ -487,10 +487,25 @@ body {
 }
 
 .doc-vendor__logo {
-  width: 114.9px;
-  height: 32.9px;
-  background-image: url("../images/content/shop/htmlacademy.svg");
+  width: 115px;
+  height: 33px;
+  background-image: url("../images/content/shop/htmlacademy-accent.svg");
   display: inline-block;
+  transition: var(--simple-transition);
+}
+
+.doc-vendor__logo:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+.doc-vendor__logo:hover {
+  outline: none;
+  background-image: url("../images/content/shop/htmlacademy.svg");
+}
+
+.doc-vendor__logo:active {
+  opacity: var(--active-opaity);
 }
 
 /*REUSED COMPONENTS*/
