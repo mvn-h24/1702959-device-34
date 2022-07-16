@@ -1038,6 +1038,7 @@ button.line-btn {
   letter-spacing: -0.02em;
   font-weight: 800;
   text-decoration: none;
+  transition: var(--simple-transition);
 }
 
 .category-list__anchor::before {
@@ -1049,6 +1050,7 @@ button.line-btn {
   background-color: var(--bg-accent);
   background-repeat: no-repeat;
   margin-bottom: 32px;
+  transition: var(--simple-transition);
 }
 
 .category-list__item:nth-child(1) .category-list__anchor {
@@ -1075,6 +1077,27 @@ button.line-btn {
   --bg: url('../images/content/categories/category-6-qb.svg')
 }
 
+.category-list__anchor:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+
+.category-list__anchor:hover {
+  outline: none;
+}
+
+.category-list__anchor:hover::before {
+  background-color: var(--bg-accent-bright);
+}
+
+.category-list__anchor:active::before {
+  background-color: var(--bg-accent);
+}
+
+.category-list__anchor:active {
+  opacity: var(--active-opaity);
+}
 
 /*services section*/
 .doc-services {
