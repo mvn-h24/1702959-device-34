@@ -777,6 +777,9 @@ button.line-btn {
   text-transform: uppercase;
   position: relative;
   box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  transition: var(--simple-transition);
 }
 
 .notify::before {
@@ -792,6 +795,7 @@ button.line-btn {
   position: absolute;
   left: 0;
   top: 0;
+  transition: var(--simple-transition);
 }
 
 .notify__info-message::after {
@@ -811,6 +815,27 @@ button.line-btn {
 
 .notify__info-message_delivery {
   --message-icon: url('../images/icons/delivery.svg');
+}
+
+.notify:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+.notify:hover {
+  outline: none;
+}
+
+.notify:hover::before {
+  background-color: var(--bg-accent-bright);
+}
+
+.notify:active {
+  opacity: var(--active-opaity);
+}
+
+.notify:active::before {
+  background-color: var(--bg-accent);
 }
 
 /*LANDING PAGE*/
@@ -1223,6 +1248,7 @@ button.line-btn {
 /*about-us section*/
 .doc__about-us .notify {
   margin-bottom: 70px;
+  width: 100%;
 }
 
 .doc__about-us__wrapper {
