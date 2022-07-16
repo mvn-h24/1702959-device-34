@@ -623,6 +623,7 @@ body {
   height: 8px;
   z-index: -1;
   transition: var(--simple-transition);
+  transform: translateY(-2px);
 }
 
 .line-btn:hover::before {
@@ -937,7 +938,7 @@ button.line-btn {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: 70px 0;
+  padding: 70px 0 75px;
   margin: 0;
 }
 
@@ -994,7 +995,7 @@ button.line-btn {
 /*services section*/
 .doc-services {
   background: linear-gradient(0, var(--bg-main), var(--bg-main)) no-repeat 0 0;
-  background-size: 100% 100px;
+  background-size: 100% 107px;
 }
 
 /*services tab-list*/
@@ -1002,7 +1003,8 @@ button.line-btn {
   width: var(--width__main-column);
   margin: 0 auto;
   display: flex;
-  padding-bottom: 72px;
+  padding-bottom: 70px;
+  padding-top: 5px;
 }
 
 .tabs-list ol {
@@ -1032,7 +1034,8 @@ button.line-btn {
   background: none;
   border: none;
   font-size: inherit;
-  width: 140px;
+  width: 160px;
+  padding: 10px 15px;
 }
 
 
@@ -1083,11 +1086,10 @@ button.line-btn {
 .service-summary:not(.hidden) {
   --bg: "#";
   display: flex;
-}
-
-.service-summary::after {
-  content: var(--bg);
-  display: inline-block;
+  justify-content: space-between;
+  background-image: var(--bg);
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .service-summary:nth-child(1) {
