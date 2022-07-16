@@ -892,10 +892,6 @@ button.line-btn {
   right: 0;
 }
 
-.pagination-list__point.current {
-  background-color: var(--color-main);
-}
-
 .pagination-list__point {
   --size: 12px;
   border-radius: 50%;
@@ -906,6 +902,25 @@ button.line-btn {
   padding: 0;
   display: inline-flex;
   cursor: pointer;
+  transition: var(--simple-transition);
+}
+
+.pagination-list__point.current {
+  background-color: var(--color-main);
+}
+
+.pagination-list__point:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+.pagination-list__point:hover {
+  outline: none;
+  opacity: var(--hover-opaity);
+}
+
+.pagination-list__point:active {
+  opacity: var(--active-opaity);
 }
 
 .pagination-list__item-point {
