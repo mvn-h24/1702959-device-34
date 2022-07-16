@@ -260,17 +260,11 @@ body {
   align-items: center;
 }
 
-.nav-list__item:focus-within .doc-nav_nav-nested,
-.nav-list__item:hover .doc-nav_nav-nested {
-  padding: 30px 60px;
-  height: auto;
-}
-
 .doc-nav_nav-nested {
   transition: 0.3s;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(3, 220px);
-  height: 0;
+  height: auto;
   overflow: hidden;
   box-sizing: border-box;
   position: absolute;
@@ -279,6 +273,9 @@ body {
   left: -60px;
   background: var(--bg-accent);
   width: var(--width__main-column);
+  animation: 1s forwards NestedNavShow;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 
 .nav-nested__item:nth-last-child(1) {
@@ -299,12 +296,14 @@ body {
   color: inherit;
   text-decoration: none;
   z-index: 11;
+  transition: var(--simple-transition);
 }
 
 .nav-nested__link:visited,
 .nav-nested__link {
   font-size: var(--font-size_secondary);
   line-height: var(--line-height_secondary);
+  transition: var(--simple-transition);
   color: inherit;
   text-decoration: none;
   display: inline-block;
@@ -470,6 +469,7 @@ body {
   transition: var(--simple-transition);
 }
 
+.link-catalog__checkbox:focus + .nav-list__link-catalog,
 .nav-nested__link:focus,
 .nav-list__link:focus,
 .string-btn:focus {
@@ -594,6 +594,19 @@ body {
 .nav-list__link-catalog {
   display: inline-flex;
   align-items: center;
+  transition: var(--simple-transition);
+  cursor: pointer;
+}
+
+.link-catalog__checkbox:checked ~ .doc-nav_nav-nested {
+  display: grid;
+}
+
+@keyframes NestedNavShow {
+  100% {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .nav-list__link-catalog::after {
@@ -615,8 +628,22 @@ body {
   box-sizing: border-box;
 }
 
-.nav-list__link-catalog:hover::after {
+.link-catalog__checkbox:checked + .nav-list__link-catalog::after {
   background-image: url(../images/icons/minus.svg);
+}
+
+.nav-list__link-catalog:active,
+.nav-list__link-catalog:active::after {
+  opacity: 1;
+}
+
+.nav-list__link-catalog:active::after {
+  background-image: url(../images/icons/minus.svg);
+}
+
+.nav-list__link-catalog:hover,
+.nav-list__link-catalog:hover::after {
+  opacity: 1;
 }
 
 .line-btn {
