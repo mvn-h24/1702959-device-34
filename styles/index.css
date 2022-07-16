@@ -854,6 +854,25 @@ button.line-btn {
   background: none;
   border: none;
   cursor: pointer;
+  transition: var(--simple-transition);
+}
+
+.slideshow-control__next-slide:focus,
+.slideshow-control__prev-slide:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+.slideshow-control__next-slide:hover,
+.slideshow-control__prev-slide:hover {
+  outline: none;
+  opacity: var(--hover-opaity);
+}
+
+.slideshow-control__next-slide:active,
+.slideshow-control__prev-slide:active {
+  opacity: var(--active-opaity);
+  outline: none;
 }
 
 .slideshow-control__next-slide::before {
