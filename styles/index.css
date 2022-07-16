@@ -1010,19 +1010,35 @@ button.line-btn {
 }
 
 .pagination-list__point {
+  border: none;
+  padding: 0;
+  background: none;
+  display: inline-flex;
   --size: 12px;
+  width: var(--size);
+  height: var(--size);
+  justify-content: stretch;
+  align-items: stretch;
+  position: relative;
+  transition: var(--simple-transition);
+}
+
+.pagination-list__point::after {
+  content: "";
   border-radius: 50%;
   border: 2px solid var(--color-main);
   background-color: var(--bg-main);
-  width: var(--size);
-  height: var(--size);
+  width: 100%;
+  height: 100%;
   padding: 0;
   display: inline-flex;
   cursor: pointer;
   transition: var(--simple-transition);
+  position: absolute;
+  box-sizing: border-box;
 }
 
-.pagination-list__point.current {
+.pagination-list__point.current::after {
   background-color: var(--color-main);
 }
 
@@ -1033,10 +1049,14 @@ button.line-btn {
 
 .pagination-list__point:hover {
   outline: none;
+}
+
+.pagination-list__point:hover::after {
+  outline: none;
   opacity: var(--hover-opaity);
 }
 
-.pagination-list__point:active {
+.pagination-list__point:active::after {
   opacity: var(--active-opaity);
 }
 
