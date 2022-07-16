@@ -1039,12 +1039,19 @@ button.line-btn {
 }
 
 
-.tabs-list__switch_current {
-  background: var(--color-main);
-}
-
 .tabs-list__switch_current .line-btn {
   color: var(--bg-accent);
+  background: var(--color-main);
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.tabs-list__switch_current .line-btn:hover {
+  color: rgba(255, 225, 127, 0.5);
+}
+
+.tabs-list__switch_current .line-btn:active {
+  color: rgba(255, 225, 127, 0.3);
 }
 
 .tabs-list__switch_current .line-btn::before {
@@ -1062,7 +1069,7 @@ button.line-btn {
 }
 
 .tabs-list__tab-layout {
-  padding: 72px 62px 72px 116px;
+  padding: 72px 62px 50px 116px;
   flex-grow: 1;
 }
 
@@ -1088,8 +1095,9 @@ button.line-btn {
   display: flex;
   justify-content: space-between;
   background-image: var(--bg);
-  background-position: right;
+  background-position: 100% 5px;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 .service-summary:nth-child(1) {
