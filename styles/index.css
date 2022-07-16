@@ -378,7 +378,7 @@ body {
 }
 
 .doc-footer .inner-section-menu__anchor {
-  padding: 10px 0;
+
 }
 
 .inner-section-menu__anchor {
@@ -390,6 +390,37 @@ body {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
+  transition: var(--simple-transition);
+  position: relative;
+}
+
+.inner-section-menu__anchor::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--bg-accent-bright);
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  transition: var(--simple-transition);
+}
+
+.inner-section-menu__anchor:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+.inner-section-menu__anchor:hover::after {
+  width: 100%;
+}
+
+.inner-section-menu__anchor:hover {
+  outline: none;
+  color: var(--bg-accent-bright);
+}
+
+.inner-section-menu__anchor:active {
+  opacity: var(--active-opaity);
 }
 
 .inner-section-menu, .social-menu {
@@ -404,21 +435,26 @@ body {
   margin: 0 auto 0 424px;
 }
 
-.social-menu__item:nth-child(1) .social-icon {
+.social-menu__item:nth-child(1) .social-icon::after {
   --bg: url('../images/content/social/1-telegram.svg')
 }
 
-.social-menu__item:nth-child(2) .social-icon {
+.social-menu__item:nth-child(2) .social-icon::after {
   --bg: url('../images/content/social/2-youtube.svg')
 }
 
-.social-menu__item:nth-child(3) .social-icon {
+.social-menu__item:nth-child(3) .social-icon::after {
   --bg: url('../images/content/social/3-twitter.svg')
 }
 
 
 .social-icon {
+  display: inline-flex;
+}
+
+.social-icon::after {
   --bg: "#";
+  content: "";
   background-image: var(--bg);
   background-repeat: no-repeat;
   background-position: center;
@@ -427,6 +463,25 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  transition: var(--simple-transition);
+}
+
+.social-icon:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+.social-icon:hover {
+  outline: none;
+}
+
+.social-icon:hover::after {
+  outline: none;
+  background-color: var(--bg-accent-bright);
+}
+
+.social-icon:active::after {
+  opacity: var(--active-opaity);
 }
 
 .doc-vendor__logo {
