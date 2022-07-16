@@ -1268,7 +1268,7 @@ button.line-btn {
 
 .columns-layout__col {
   color: var(--color-secondary);
-  width: 520px;
+  width: 530px;
 }
 
 .columns-layout__col::before {
@@ -1329,8 +1329,8 @@ button.line-btn {
 .doc-subscribe {
   width: var(--width__main-column);
   margin: 0 auto;
-  padding: 64px 0 56px;
-  min-height: 400px;
+  padding: 60px 0;
+  min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1359,7 +1359,8 @@ button.line-btn {
 .subscribe-form__par {
   margin: 0;
   color: var(--color-secondary);
-  max-width: 529px;
+  max-width: 555px;
+  padding-top: 10px;
 }
 
 .subscribe-form__input-wrapper {
@@ -1370,7 +1371,7 @@ button.line-btn {
   background: none;
   border: none;
   border-bottom: 3px solid #C4C4C4;
-  padding: 16px 11px;
+  padding: 15px 17px;
 }
 
 .subscribe-form__input,
