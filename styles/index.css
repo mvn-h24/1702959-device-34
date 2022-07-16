@@ -575,16 +575,31 @@ body {
   text-decoration: none;
 }
 
+.anchor-link,
 .address-location__implicit-anchor {
   text-decoration: none;
   font-style: normal;
   color: inherit;
+  font-weight: normal;
+  transition: var(--simple-transition);
 }
 
-.anchor-link {
-  font-style: normal;
-  color: inherit;
-  font-weight: normal;
+.anchor-link:focus,
+.address-location__implicit-anchor:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+  border-color: var(--ui1-gray);
+}
+
+.anchor-link:hover,
+.address-location__implicit-anchor:hover {
+  outline: none;
+  opacity: var(--hover-opaity);
+}
+
+.anchor-link:active,
+.address-location__implicit-anchor:active {
+  opacity: var(--active-opaity);
 }
 
 .doc-footer .anchor-link {
