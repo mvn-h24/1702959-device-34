@@ -549,6 +549,10 @@ body {
   outline-offset: var(--outline-offset);
 }
 
+.link-catalog__checkbox:focus + .nav-list__link-catalog:hover {
+  outline: none;
+}
+
 .nav-nested__link:hover,
 .nav-list__link:hover,
 .string-btn:hover {
