@@ -1725,9 +1725,25 @@ button.line-btn {
   letter-spacing: -0.02em;
 }
 
+.catalog-filter__prop_color .catalog-filter__prop-name {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
 .catalog-filter__prop-values-list {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.prop-values-list__item {
+  display: inline-flex;
+}
+
+.prop-values-list__item:not(:last-child) {
+  margin-bottom: 18px;
 }
 
 .pagination-list {
@@ -2123,8 +2139,8 @@ button.line-btn {
   border-top: 2px solid black;
   width: 200px;
   margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 28px;
+  padding-top: 7px;
+  padding-bottom: 32px;
 }
 
 .catalog-filter__prop:last-child {
@@ -2274,4 +2290,98 @@ button.line-btn {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   transform: translateX(10px);
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox__view::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: var(--simple-transition);
+}
+
+.checkbox__view::before {
+  content: "";
+  display: none;
+  background-image: url("/images/icons/tick.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  animation: 0.5s CheckBoxTickShow forwards;
+}
+
+.checkbox__view {
+  --size: 20px;
+  height: var(--size);
+  width: var(--size);
+  border: 2px solid #CCCCCC;
+  border-radius: 3px;
+  background-color: transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  position: relative;
+  box-sizing: border-box;
+  transition: var(--simple-transition);
+}
+
+.checkbox__label-text {
+  transition: var(--simple-transition);
+}
+
+.checkbox__view,
+.checkbox__label-text {
+  cursor: pointer;
+}
+
+.checkbox__input:checked + .checkbox__view {
+  border: 2px solid #000000;
+}
+
+.checkbox__input:checked + .checkbox__view::before {
+  display: inline-block;
+}
+
+.checkbox__input:focus + .checkbox__view::after {
+  outline: var(--focus-outline);
+  outline-offset: calc(var(--outline-offset) + 2px);
+}
+
+.checkbox:hover .checkbox__view::after {
+  outline: none;
+}
+
+.checkbox:hover .checkbox__view,
+.checkbox:hover .checkbox__label-text {
+  outline: none;
+  opacity: var(--hover-opaity);
+}
+
+.checkbox:active {
+  opacity: var(--active-opaity);
+}
+
+.checkbox__input:disabled + .checkbox__view,
+.checkbox__input:disabled ~ .checkbox__label-text {
+  opacity: 0.1;
+  cursor: initial;
+}
+
+@keyframes CheckBoxTickShow {
+  0% {
+    opacity: 0;
+    transform: rotate(-360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0);
+  }
 }
