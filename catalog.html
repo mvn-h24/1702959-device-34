@@ -94,11 +94,21 @@
             <div class="catalog-filter__prop catalog-filter__prop_price">
               <span class="catalog-filter__prop-name">Стоимость</span>
               <div class="range-slider">
-                <label class="range-slider__label" for="catalog-filter__prop-control_bottom-price"></label>
-                <input class="range-slider__range-input" id="catalog-filter__prop-control_bottom-price" max="1000000" min="0" type="range" value="100000">
-
-                <label class="range-slider__label" for="catalog-filter__prop-control_top-price"></label>
-                <input class="range-slider__range-input" id='catalog-filter__prop-control_top-price' max="1000000" min="0" type="range" value="500000">
+                <div class="range-slider__track"></div>
+                <div class="range-slider__track-control">
+                  <div class="range-slider__track-point">
+                    <button type="button" class="range-slider__track-point-btn"></button>
+                    <label class="range-slider__range-input-wrapper">от
+                      <input class="range-slider__range-input" name="price_min" type="number" value="0" min="0" max="50000">
+                    </label>
+                  </div>
+                  <div class="range-slider__track-point">
+                    <button type="button" class="range-slider__track-point-btn"></button>
+                    <label class="range-slider__range-input-wrapper">до
+                      <input class="range-slider__range-input" name="price_max" type="number" value="0" min="0" max="50000">
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="catalog-filter__prop catalog-filter__prop_color">

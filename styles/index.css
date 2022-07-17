@@ -1739,7 +1739,7 @@ button.line-btn {
 }
 
 .order-btn-group__item {
-  display: inline-block;
+  display: inline-flex;
 }
 
 .order-btn-group__item::after {
@@ -2091,4 +2091,143 @@ button.line-btn {
 
 .catalog-pagination-list__link:active {
   color: rgba(68, 68, 68, 0.1);
+}
+
+.catalog-filter__prop {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.range-slider {
+  padding-top: 10px;
+  display: grid;
+  grid-auto-rows: 5px 5px 40px;
+  grid-auto-columns: 9px 1fr 9px;
+  width: 210px;
+  transform: translateX(-5px);
+}
+
+.range-slider__track-point {
+  display: flex;
+  flex-direction: column;
+}
+
+.range-slider__track::before {
+  content: "";
+  height: 100%;
+  width: 120px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: black;
+}
+
+.range-slider__track {
+  height: 2px;
+  border-radius: 2px;
+  background-color: #DCDCDC;
+  position: relative;
+  grid-row: 2/3;
+  align-self: end;
+  grid-column: 2/3;
+}
+
+.range-slider__track-control {
+  display: flex;
+  position: relative;
+  grid-row: 1/4;
+  grid-column: 1/4;
+}
+
+.range-slider__track-point:nth-child(2) {
+  left: 120px;
+}
+
+.range-slider__track-point {
+  position: absolute;
+}
+
+.range-slider__track-point-btn {
+  border: none;
+  box-sizing: border-box;
+  background: none;
+  padding: 0;
+  display: inline-flex;
+  width: min-content;
+  cursor: pointer;
+  transition: var(--simple-transition);
+  margin-bottom: 5px;
+}
+
+.range-slider__track-point-btn {
+  background-color: var(--bg-main-secondary-pale);
+}
+
+.range-slider__track-point-btn::before {
+  content: "";
+  --size: 18px;
+  border-radius: 50%;
+  border: 2px solid black;
+  width: var(--size);
+  height: var(--size);
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: var(--bg-main-secondary-pale);
+  transition: var(--simple-transition);
+}
+
+.range-slider__track-point-btn:focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+.range-slider__track-point-btn:hover::before {
+  opacity: 0.5;
+}
+
+.range-slider__track-point-btn:hover {
+  outline: none;
+}
+
+.range-slider__track-point-btn:active::before {
+  background-color: black;
+  opacity: 1;
+}
+
+.range-slider__range-input-wrapper {
+  display: inline-flex;
+}
+
+.range-slider__range-input::-webkit-outer-spin-button,
+.range-slider__range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.range-slider__range-input,
+.range-slider__range-input-wrapper {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+.range-slider__range-input {
+  -moz-appearance: textfield;
+  margin-left: 5px;
+  appearance: textfield;
+  background: none;
+  border: none;
+  padding: 0;
+  display: inline-block;
+  outline: none;
+}
+
+.range-slider__range-input-wrapper:focus-within {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+.range-slider__range-input-wrapper:hover {
+  outline: none;
 }
