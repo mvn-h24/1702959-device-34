@@ -1662,9 +1662,26 @@ button.line-btn {
 }
 
 .catalog-sort__form {
+  padding: 0 20px;
   display: flex;
   grid-column: 2 / -1;
   grid-row: 1 / 2;
+}
+
+.catalog-sort {
+  width: 100%;
+}
+
+.catalog-sort .transparent-select__catalog-sort {
+  margin: 0 auto;
+}
+
+.catalog-sort, .catalog-sort__order-btn-group {
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  margin: 0;
+  align-items: center;
 }
 
 .catalog-listing__wrapper {
@@ -1675,6 +1692,13 @@ button.line-btn {
 }
 
 /*catalog filter*/
+.catalog-sort__heading {
+  border: none;
+  position: static;
+  float: left;
+  padding: 0;
+}
+
 .catalog-sort__heading,
 .catalog-filter__heading {
   font-family: var(--font-heading), sans-serif;
@@ -1715,18 +1739,40 @@ button.line-btn {
 }
 
 .order-btn-group__item {
-  width: 11px;
-  height: 10px;
-  background-size: cover;
   display: inline-block;
-  cursor: pointer;
 }
 
-.order-btn-group__item-asc {
+.order-btn-group__item::after {
+  content: "";
+  padding: 10px;
+  width: 11px;
+  height: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.order-btn-group__item:focus-within {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+.order-btn-group__item:hover::after {
+  outline: none;
+  opacity: 0.5;
+}
+
+.order-btn-group__item:active::after {
+  opacity: 1;
+}
+
+.order-btn-group__item-asc::after {
   background-image: url("../images/icons/arrow2-up.svg");
 }
 
-.order-btn-group__item-desc {
+.order-btn-group__item-desc::after {
   background-image: url("../images/icons/arrow2-down.svg");
 }
 
@@ -1859,13 +1905,63 @@ button.line-btn {
   width: 100%;
 }
 
+.transparent-select__catalog-sort {
+  display: inline-flex;
+  align-items: center;
+  transition: var(--simple-transition);
+}
+
+.transparent-select__catalog-sort:focus-within {
+  outline: var(--focus-outline);
+  outline-offset: var(--outline-offset);
+}
+
+.transparent-select__catalog-sort:hover {
+  outline: none;
+}
+
+.transparent-select {
+  outline: none;
+  cursor: pointer;
+  transition: var(--simple-transition);
+}
+
 .transparent-select__option,
 .transparent-select {
+  -webkit-appearance: none;
+  appearance: none;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
 }
+
+.transparent-select__arrow {
+  display: inline-block;
+  background-image: url("/images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 12px;
+  width: 9px;
+  height: 6px;
+  background-size: contain;
+}
+
+.transparent-select:hover + .transparent-select__arrow,
+.transparent-select:hover {
+  opacity: var(--hover-opaity);
+}
+
+.transparent-select:active + .transparent-select__arrow,
+.transparent-select:active {
+  opacity: var(--active-opaity);
+}
+
+.transparent-select:disabled + .transparent-select__arrow,
+.transparent-select:disabled {
+  opacity: 0.1;
+}
+
 
 /*pagination*/
 .outline-btn {
