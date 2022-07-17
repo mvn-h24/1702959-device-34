@@ -2456,6 +2456,11 @@ button.line-btn {
   opacity: 0.6;
 }
 
+.radio-btn__input:focus + .radio-btn__view::after {
+  outline: var(--focus-outline);
+  outline-offset: calc(var(--outline-offset) + 2px);
+}
+
 .radio-btn:active .radio-btn__label-text {
   opacity: 0.3;
 }
@@ -2467,6 +2472,10 @@ button.line-btn {
   border-color: black;
   opacity: 1;
   cursor: default;
+}
+
+.radio-btn:hover .radio-btn__input:focus + .radio-btn__view::after {
+  outline: none;
 }
 
 .radio-btn__input:disabled + .radio-btn__view,
