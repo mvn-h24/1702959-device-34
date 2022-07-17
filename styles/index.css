@@ -1723,9 +1723,6 @@ button.line-btn {
   line-height: 20px;
   font-weight: 700;
   letter-spacing: -0.02em;
-}
-
-.catalog-filter__prop_color .catalog-filter__prop-name {
   margin-bottom: 15px;
   display: inline-block;
 }
@@ -2122,7 +2119,7 @@ button.line-btn {
 .catalog-filter__main-fieldset {
   padding: 25px 0 0;
   border: none;
-  margin: 0 0 10px;
+  margin: 0 0 40px;
   display: flex;
   flex-direction: column;
 }
@@ -2140,7 +2137,20 @@ button.line-btn {
   width: 200px;
   margin: 0 auto;
   padding-top: 7px;
-  padding-bottom: 32px;
+  padding-bottom: 25px;
+}
+
+.catalog-filter__prop:nth-child(2) .catalog-filter__prop-name {
+  margin-bottom: 10px;
+}
+
+.catalog-filter__prop:nth-child(3) {
+  padding-bottom: 30px;
+}
+
+.catalog-filter__prop:nth-child(3) .catalog-filter__prop-name,
+.catalog-filter__prop:nth-child(4) .catalog-filter__prop-name {
+  margin-bottom: 20px;
 }
 
 .catalog-filter__prop:last-child {
@@ -2384,4 +2394,87 @@ button.line-btn {
     opacity: 1;
     transform: rotate(0);
   }
+}
+
+
+.radio-btn {
+  display: inline-flex;
+}
+
+.radio-btn__view {
+  --size: 20px;
+  height: var(--size);
+  width: var(--size);
+  border: 2px solid rgba(204, 204, 204, 1);
+  border-radius: 50%;
+  background-color: transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  position: relative;
+  box-sizing: border-box;
+  transition: var(--simple-transition);
+}
+
+.radio-btn__view::before {
+  content: "";
+  position: absolute;
+  transition: var(--simple-transition);
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  display: none;
+  animation: 0.5s CheckBoxTickShow forwards;
+}
+
+.radio-btn__view::after {
+  content: "";
+  position: absolute;
+  transition: var(--simple-transition);
+  width: 100%;
+  height: 100%;
+}
+
+.radio-btn__view,
+.radio-btn__label-text {
+  cursor: pointer;
+  color: black;
+}
+
+
+.radio-btn:hover .radio-btn__view {
+  border-color: rgba(204, 204, 204, 0.6);
+}
+
+.radio-btn:active .radio-btn__view {
+  border-color: rgba(204, 204, 204, 0.3);
+}
+
+.radio-btn:hover .radio-btn__label-text {
+  opacity: 0.6;
+}
+
+.radio-btn:active .radio-btn__label-text {
+  opacity: 0.3;
+}
+
+.radio-btn__input:checked + .radio-btn__view,
+.radio-btn__input:checked ~ .radio-btn__label-text,
+.radio-btn:hover .radio-btn__input:checked ~ .radio-btn__label-text,
+.radio-btn:active .radio-btn__input:checked ~ .radio-btn__label-text {
+  border-color: black;
+  opacity: 1;
+  cursor: default;
+}
+
+.radio-btn__input:disabled + .radio-btn__view,
+.radio-btn__input:disabled ~ .radio-btn__label-text {
+  opacity: 0.1;
+  cursor: default;
+}
+
+.radio-btn__input:checked + .radio-btn__view::before {
+  display: inline-block;
 }
